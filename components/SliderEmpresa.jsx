@@ -5,14 +5,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { logos } from "./imagenes";
 
-import { useEffect } from "react";
-export const Slider = () => {
-  useEffect(() => {
-    document
-      .querySelector(".swiper-wrapper")
-      .style.setProperty("align-items", "center");
-  }, []);
-
+export const SliderEmpresa = () => {
   return (
     <div className="swiper clientLogoSliderLight pb-2 sm:pb-9">
       <Swiper

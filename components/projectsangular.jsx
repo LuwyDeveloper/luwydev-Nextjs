@@ -60,7 +60,7 @@ export default function ProjectsAngular() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="text-white">Angular10, Signals, Auth0</p>
+                <p className="text-white">Angular20, Signals, Auth0</p>
               </a>
             </li>
             <li className="text-blue-500 text-base font-medium">

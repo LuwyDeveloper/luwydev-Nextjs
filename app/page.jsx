@@ -14,7 +14,8 @@ import {
   background,
 } from "@/components/imagenes";
 import { ChangeLang } from "@/components/ChangeLang";
-import { Slider } from "@/components/slider";
+import { SliderEmpresa } from "@/components/SliderEmpresa";
+import { SliderProyecto } from "@/components/SliderProyecto";
 import { WordWrapper } from "@/components/WordWrapper";
 import { FooterC } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
@@ -512,10 +513,18 @@ export function App() {
                     </div>
                   </div>
                   <div
-                    className="snap-start snap-normal slide-sec pt-[46px] pb-8"
+                    className="snap-start snap-normal slide-sec mx-auto pt-[38px] lg:max-w-7xl"
                     id="projects"
                   >
-                    <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div className="pt-[7rem] pb-[5rem]">
+                      <div className="max-w-lg mx-auto text-center mb-10">
+                        <h2 className="text-5xl font-urbanist text-white font-semibold">
+                          {t('Proyectos')}
+                        </h2>
+                      </div>
+                      <SliderProyecto></SliderProyecto>
+                    </div>
+                    {/* <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
                       <div>
                         <h2 className="uppercase text-lg text-blue-500 font-medium block mb-3">
                           {t('Proyectos')}
@@ -524,8 +533,8 @@ export function App() {
                           {t('Trabajos realizados')}
                         </h3>
                       </div>
-                    </div>
-                    <div className="flex justify-center flex-col  py-5">
+                    </div> */}
+                    {/* <div className="flex justify-center flex-col  py-5">
                       <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
                         Angular / CSR – SSR
                       </h4>
@@ -542,14 +551,14 @@ export function App() {
                         CMS - Ecommerce
                       </h4>
                       <ProjectsCMS></ProjectsCMS>
-                    </div>
+                    </div> */}
 
-                    <div className="flex justify-center items-center mt-10">
+                    <div className="flex justify-center items-center">
                       <Link
-                        href={"/projects"}
+                        href={"/proyectos"}
                         className="bg-blue-500 hover:bg-blue-600 transition-all text-white px-6 py-4 rounded-lg inline-flex justify-between items-center"
                       >
-                        <p className="text-white">{t('Ver todos')}</p>
+                        <p className="text-white">{t('Ver todos los Proyectos')}</p>
                       </Link>
                     </div>
                   </div>
@@ -563,7 +572,7 @@ export function App() {
                           {t('Empresas')}
                         </h2>
                       </div>
-                      <Slider></Slider>
+                      <SliderEmpresa></SliderEmpresa>
                     </div>
                   </div>
                   <div

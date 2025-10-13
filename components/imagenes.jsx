@@ -53,6 +53,15 @@ import Yanbal_logo from "@/public/images/logo/Yanbal_logo.png";
 import Yate_Peru_logo from "@/public/images/logo/Yate_Peru_logo.png";
 import logo_jjmining from "@/public/images/logo/logo_jjmining.png";
 import removex_logo from "@/public/images/logo/removex_logo.png";
+import angular_logo from "@/public/images/logo/angular_logo.svg";
+import react_logo from "@/public/images/logo/react_logo.svg";
+import vite_logo from "@/public/images/logo/vite_logo.svg";
+import next_logo from "@/public/images/logo/nextjs_logo.svg";
+import wordpress_logo from "@/public/images/logo/wordpress_logo.svg";
+import tailwind_logo from "@/public/images/logo/tailwind_logo.svg";
+import materialUI_logo from "@/public/images/logo/materialUI_logo.svg";
+import figma_logo from "@/public/images/logo/figma_logo.svg";
+
 //profile
 import years5 from "@/public/images/profile/years5.png";
 import customar from "@/public/images/profile/customar.png";
@@ -134,6 +143,14 @@ export const logos = {
 "Yate_Peru_logo" : Yate_Peru_logo,
 "logo_jjmining" : logo_jjmining,
 "removex_logo" : removex_logo,
+"angular_logo" : angular_logo,
+"react_logo" : react_logo,
+"vite_logo" : vite_logo,
+"next_logo" : next_logo,
+"wordpress_logo" : wordpress_logo,
+"tailwind_logo" : tailwind_logo,
+"materialUI_logo" : materialUI_logo,
+"figma_logo" : figma_logo,
 }
 export const profile = {
     "years5" : years5,

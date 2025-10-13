@@ -115,7 +115,7 @@ export function ProjectsPage() {
                           {t('Proyectos')}
                         </h2>
                         <h3 className="text-white font-semibold text-4xl xl:text-5xl xl:leading-snug mb-2">
-                          Web Sites, E-commerce, CSR, SSR
+                          {t('Trabajos Realizados')}
                         </h3>
                       </div>
                       <div className="flex items-center flex-wrap gap-8">

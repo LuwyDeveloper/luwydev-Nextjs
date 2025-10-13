@@ -1,129 +1,39 @@
 import Image from "next/image";
 import { projects } from "./imagenes";
+import ProjectsCMS from "@/components/projectscms";
+import ProjectsAngular from "@/components/projectsangular";
+import ProjectsNext from "@/components/projectsnext";
 
-
-export default function App() {
+export default function ProjectsC() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-           <a href="https://removex.pe/" target="_blank" rel="noopener noreferrer">
-           Removex
-            </a>
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://removex.pe/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white">FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.removex} alt="Removex" />
+    <div className="grid grid-cols-1 gap-5">
+      <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          MicroFrontend
+        </h4>
       </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-           <a href="https://trainingcertification.pe/" target="_blank" rel="noopener noreferrer">
-           Training Certification
-            </a>
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://trainingcertification.pe/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white">FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.training} alt="Training Certification" />
+      <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          Design System
+        </h4>
       </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-           <a href="https://luwydev.com/jjm/web2024/" target="_blank" rel="noopener noreferrer">
-           JJ Mining
-            </a>
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://luwydev.com/jjm/web2024/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white">FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.jjmining} alt="JJ Mining" />
+      <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          Angular / CSR – SSR
+        </h4>
+        <ProjectsAngular></ProjectsAngular>
       </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-           <a href="https://serviciostecnicosenperu.com/" target="_blank" rel="noopener noreferrer">
-           Termas Termotanques
-            </a>
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://serviciostecnicosenperu.com/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white">FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.servtecnicos} alt="Termas Termotanques" />
+      <div className="flex justify-center flex-col py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          NextJS - React/ CSR – SSR
+        </h4>
+        <ProjectsNext></ProjectsNext>
       </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-            <a href="https://floreriabenavides.com.pe/" target="_blank" rel="noopener noreferrer">
-            Florería Benavides
-            </a>
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://floreriabenavides.com.pe/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white">FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.florBenavides} alt="Florería Benavides" />
-      </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-            <a href="https://muebleriabianely.com/" target="_blank" rel="noopener noreferrer">
-            Bianely
-            </a>            
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://muebleriabianely.com/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white"> FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.Bianely} alt="Bianely" />
-      </div>
-      <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
-            <a href="https://www.grubbasport.com/" target="_blank" rel="noopener noreferrer">
-            Grubbasport
-            </a>            
-          </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a href="https://www.grubbasport.com/" target="_blank" rel="noopener noreferrer">
-              <p className="text-white"> FrontEnd</p>
-              </a>
-            </li>
-          </ul>          
-        </div>
-        <Image className="w-full rounded-lg" src={projects.grubba} alt="GrubbaSport" />
+      <div className="flex justify-center flex-col pt-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          CMS - Ecommerce
+        </h4>
+        <ProjectsCMS></ProjectsCMS>
       </div>
     </div>
   );
