@@ -3,6 +3,7 @@ import { projects } from "./imagenes";
 import ProjectsCMS from "@/components/projectscms";
 import ProjectsAngular from "@/components/projectsangular";
 import ProjectsNext from "@/components/projectsnext";
+import ProjectsMF from "@/components/projectMF";
 
 export default function ProjectsC() {
   return (
@@ -11,6 +12,7 @@ export default function ProjectsC() {
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           MicroFrontend
         </h4>
+        <ProjectsMF></ProjectsMF>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">

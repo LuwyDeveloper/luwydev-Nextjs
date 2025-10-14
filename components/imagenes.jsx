@@ -85,6 +85,7 @@ import luwydev from "@/public/images/projects/luwydev.jpg";
 import shopReact from "@/public/images/projects/shopReact.png";
 import luwygames from "@/public/images/projects/luwygames.jpg";
 import ngrx_signal from "@/public/images/projects/ngrx_signal.jpg";
+import microFrontend from "@/public/images/projects/microFrontend.jpg";
 
 export const about = {
     "next_angular" : next_angular,
@@ -176,6 +177,7 @@ export const projects = {
     "shopReact" : shopReact,
     "luwygames" : luwygames,
     "ngrx_signal" : ngrx_signal,
+    "microFrontend" : microFrontend,
 }
 export default {
  ...about,
