@@ -1,7 +1,10 @@
 // bg
 import BG from '@/public/images/bg/BG.png';
 // about
-import next_angular from '@/public/images/about/next_angular.png';
+// import next_angular from '@/public/images/about/next_angular.png';
+
+import react_next_vite from '@/public/images/about/react_next_vite.png';
+import ajn from '@/public/images/about/angular_jest_ngrx.png';
 import Databases_logo from '@/public/images/about/Databases_logo.png';
 import dskill from '@/public/images/about/dskill.png';
 import Frame from '@/public/images/about/Frame.svg';
@@ -88,7 +91,8 @@ import ngrx_signal from "@/public/images/projects/ngrx_signal.jpg";
 import microFrontend from "@/public/images/projects/microFrontend.jpg";
 
 export const about = {
-    "next_angular" : next_angular,
+    "react_next_vite" : react_next_vite,
+    "ajn" : ajn,
     "Databases_logo" : Databases_logo,
     "dskill" : dskill,
     "Frame" : Frame,
@@ -105,7 +109,7 @@ export const about = {
     "netlify" : netlify,
     "git" : git,
     "neon_console" : neon_console,
-    "wordpress" : wordpress,
+    "wordpress_logo" : wordpress_logo,
 }
 export const background = {
     "BG" : BG,

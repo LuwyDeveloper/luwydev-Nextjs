@@ -40,6 +40,9 @@ a {
 .top-270 {
   top: -270px;
 }
+.top-280 {
+  top: -280px;
+}
 .top-300 {
   top: -300px;
 }
@@ -51,8 +54,8 @@ a {
   bottom: -200px;
 }
 
-.bottom-300 {
-  bottom: -300px;
+.bottom-330 {
+  bottom: -330px;
 }
 .bottom-400 {
   bottom: -400px;

@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import { PreLoader } from "@/components/Preloader";
 import "animate.css";
 import ProjectsC from "@/components/projects";
 import {
@@ -17,7 +16,6 @@ export function ProjectsPage() {
     const t = useTranslations();
   return (
     <div style={{ background: "#010825" }} className="max-h-screen h-screen">
-      <PreLoader></PreLoader>
       <div
         style={{ background: `url(${background.BG.src})` }}
         className="flex justify-center items-center bg-no-repeat box-border bg-cover h-full relative pb-[68px]"

@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { PreLoader } from "@/components/Preloader";
 import "animate.css";
-import ProjectsCMS from "@/components/projectscms";
-import ProjectsAngular from "@/components/projectsangular";
-import ProjectsNext from "@/components/projectsnext";
 import {
   logos,
   icons,
@@ -20,13 +18,29 @@ import { WordWrapper } from "@/components/WordWrapper";
 import { FooterC } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
 import { MenuMobile } from "@/components/MenuMobile";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export function App() {
+  const [showPreloader, setShowPreloader] = useState(false);
+  useEffect(() => {
+    const hasPreloader = sessionStorage.getItem("hasPreloader");
+
+    if (!hasPreloader) {
+      setShowPreloader(true);
+      sessionStorage.setItem("hasPreloader", "true");
+      const timer = setTimeout(() => {
+        setShowPreloader(false);
+      }, 2500);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   const t = useTranslations();
+
   return (
     <div style={{ background: "#010825" }} className="max-h-screen h-screen">
-      <PreLoader></PreLoader>
+      {showPreloader && <PreLoader />}
       <div
         style={{ background: `url(${background.BG.src})` }}
         className="flex justify-center items-center bg-no-repeat box-border bg-cover h-full relative pb-[68px]"
@@ -63,7 +77,6 @@ export function App() {
                 </p>
               </div>
               <div className="sm:flex gap-[10px] hidden">
-                
                 <a
                   href="https://github.com/Luwy-Dyro"
                   target="_blank"
@@ -148,7 +161,7 @@ export function App() {
                           </span>
                         </div>
                         <p className="text-xl lg:text-2xl text-neutral-100 pb-10 text_2">
-                          {t('Creativo, Analítico y Calaborativo')}
+                          {t("Creativo, Analítico y Calaborativo")}
                         </p>
                         <div className="flex items-center flex-wrap gap-8">
                           <a
@@ -221,11 +234,13 @@ export function App() {
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame} alt="" />
                       <h4 className="text-white text-2xl font-semibold mt-3">
-                        {t('Microservicios')}
+                        {t("Microservicios")}
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
-                        {t('Colab en diseño e implementación de microservicios')},
-                        RestFul, Spring Boot, Mysql, SQL Server, MongoDB
+                        {t(
+                          "Colab en diseño e implementación de microservicios"
+                        )}
+                        , RestFul, Spring Boot, Mysql, SQL Server, MongoDB
                       </p>
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
@@ -244,13 +259,14 @@ export function App() {
                         UX Developer
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
-                        {t('Prototipos')}, design Tinking, Figma, Adobe XD, AI, PSD
+                        {t("Prototipos")}, design Tinking, Figma, Adobe XD, AI,
+                        PSD
                       </p>
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame6} alt="" />
                       <h4 className="text-white text-2xl font-semibold mt-3">
-                        {t('Metodología Agile')}
+                        {t("Metodología Agile")}
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
                         Scrum y Kanban - Azure Board, Jira, MS Planner, Notion
@@ -276,14 +292,17 @@ export function App() {
                       <div className="lg:w-1/2">
                         <div>
                           <h2 className="uppercase text-lg text-blue-500 font-medium block mb-3">
-                            {t('Conóceme')}
+                            {t("Conóceme")}
                           </h2>
 
                           <h3 className="text-white font-semibold text-4xl xl:text-5xl xl:leading-snug mb-4">
                             Software Skills
                           </h3>
                           <p className="text-lg text-neutral-100 mb-8">
-                            {t('Estoy utilizando los mejores métodos de diseño líderes en mi trabajo')}.
+                            {t(
+                              "Estoy utilizando los mejores métodos de diseño líderes en mi trabajo"
+                            )}
+                            .
                           </p>
                         </div>
                         <div className="mb-10 space-y-4">
@@ -438,7 +457,7 @@ export function App() {
                           </div>
                           <div className="relative">
                             <b className="text-lg font-medium text-neutral-100 block mb-3">
-                              CMS (WooCommerce – {t('Pasarelas de Pago')})
+                              CMS (WooCommerce – {t("Pasarelas de Pago")})
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
                               <div
@@ -457,55 +476,60 @@ export function App() {
                             alt=""
                           />
                           <ul className="hidden lg:block">
-                            <li className="absolute -top-[70px] -left-14 z-30 moveRightLeftPR">
-                              <Image src={about.SAP_logo} alt="Logo SAP" />
-                            </li>
-                            <li className="absolute -bottom-16 left_8 z-30 moveBottomTopPR">
-                              <Image
-                                src={about.Databases_logo}
-                                alt="Logos Base de Datos"
-                              />
-                            </li>
-                            <li className="absolute -top-[70px] -right-12 z-30 moveTopBottomPR">
-                              <Image
-                                src={about.toolDsg}
-                                alt="Logos de Edicion"
-                              />
-                            </li>
-                            <li className="absolute -bottom-14 -right-12 z-30 moveRightLeftPR">
-                              <Image
-                                src={about.next_angular}
-                                alt="Logos Framework"
-                              />
-                            </li>
-
-                            <li className="absolute top-270 right-[0px] z-30 moveRightLeftPR">
-                              <Image src={about.vercel} alt="Logo vercel" />
-                            </li>
-                            <li className="absolute top-200 -left-[40px] z-30 moveLeftRightPR">
-                              <Image src={about.netlify} alt="Logo netlify" />
-                            </li>
-                            <li className="absolute bottom-200 right-[50px] z-30 moveBottomTopPR">
-                              <Image src={about.git} alt="Logo git" />
-                            </li>
-
-                            <li className="absolute bottom-150 z-30 moveLeftRightPR">
-                              <Image src={about.render} alt="Logo render" />
-                            </li>
-                            <li className="absolute bottom-300 left_10 z-30 moveTopBottomPR ">
-                              <Image src={about.azure} alt="Logo azure" />
-                            </li>
-                            <li className="absolute bottom-300 right-[20px] z-30 moveRightLeftPR">
+                            {/* Top */}
+                            <li className="absolute w-45 xl:w-auto top-280 xl:top-300 left-[0px] xl:-left-[40px] z-30 moveTopBottomPR">
                               <Image
                                 src={about.neon_console}
                                 alt="Logo Neon Console"
                               />
                             </li>
-                            <li className="absolute bottom-400 right_30 z-30 moveLeftRightPR">
+                            <li className="absolute w-45 xl:w-auto top-270 -right-[10px] z-30 moveRightLeftPR">
+                              <Image src={about.vercel} alt="Logo vercel" />
+                            </li>
+                            <li className="absolute w-45 xl:w-auto top-200 -left-[40px] z-30 moveLeftRightPR">
+                              <Image src={about.netlify} alt="Logo netlify" />
+                            </li>
+                            <li className="absolute w-45 xl:w-auto top-200 right-[10px] xl:-right-[30px]  z-30 moveBottomTopPR">
+                              <Image src={about.render} alt="Logo render" />
+                            </li>
+
+                            {/* Middle */}
+                            <li className="absolute w-48 xl:w-auto -top-[70px] -left-14 z-30 moveRightLeftPR">
+                              <Image src={about.SAP_logo} alt="Logo SAP" />
+                            </li>
+                            <li className="absolute w-56 xl:w-auto -bottom-16 left_8 z-30 moveBottomTopPR">
                               <Image
-                                src={about.wordpress}
+                                src={about.Databases_logo}
+                                alt="Logos Base de Datos"
+                              />
+                            </li>
+                            <li className="absolute w-48 xl:w-auto -top-[70px] -right-7 xl:-right-12 z-30 moveTopBottomPR">
+                              <Image
+                                src={about.toolDsg}
+                                alt="Logos de Edicion"
+                              />
+                            </li>
+                            <li className="absolute w-45 xl:w-auto -bottom-14 -right-6 xl:-right-12 z-30 moveRightLeftPR">
+                              <Image
+                                src={about.react_next_vite}
+                                alt="Logos Framework"
+                              />
+                            </li>
+                            {/* Bottom */}
+                            <li className="absolute bottom-200 left-8 xl:left-1/5 z-30 moveLeftRightPR">
+                              <Image src={about.ajn} alt="Logo git" />
+                            </li>
+                            <li className="absolute w-20 xl:w-auto  bottom-330 left_10 z-30 moveTopBottomPR ">
+                              <Image src={about.azure} alt="Logo azure" />
+                            </li>
+                            <li className="absolute w-20 xl:w-24  bottom-330 left-2/5 z-30 moveBottomTopPR">
+                              <Image
+                                src={about.wordpress_logo}
                                 alt="Logo wordpress"
                               />
+                            </li>
+                            <li className="absolute w-20 xl:w-auto bottom-330 right-[50px] z-30 moveTopBottomPR">
+                              <Image src={about.git} alt="Logo git" />
                             </li>
                           </ul>
                         </div>
@@ -519,7 +543,7 @@ export function App() {
                     <div className="pt-[7rem] pb-[5rem]">
                       <div className="max-w-lg mx-auto text-center mb-10">
                         <h2 className="text-5xl font-urbanist text-white font-semibold">
-                          {t('Proyectos')}
+                          {t("Proyectos")}
                         </h2>
                       </div>
                       <SliderProyecto></SliderProyecto>
@@ -558,7 +582,9 @@ export function App() {
                         href={"/proyectos"}
                         className="bg-blue-500 hover:bg-blue-600 transition-all text-white px-6 py-4 rounded-lg inline-flex justify-between items-center"
                       >
-                        <p className="text-white">{t('Ver todos los Proyectos')}</p>
+                        <p className="text-white">
+                          {t("Ver todos los Proyectos")}
+                        </p>
                       </Link>
                     </div>
                   </div>
@@ -569,7 +595,7 @@ export function App() {
                     <div className="pt-[7rem] pb-[5rem]">
                       <div className="max-w-lg mx-auto text-center mb-10">
                         <h2 className="text-5xl font-urbanist text-white font-semibold">
-                          {t('Empresas')}
+                          {t("Empresas")}
                         </h2>
                       </div>
                       <SliderEmpresa></SliderEmpresa>
@@ -581,10 +607,10 @@ export function App() {
                   >
                     <div>
                       <h2 className="text-white font-bold text-4xl leading-normal xl:text-5xl capitalize xl:leading-snug text-center">
-                       {t('Contácteme')}
+                        {t("Contácteme")}
                       </h2>
                       <h3 className="text-2xl font-medium text-white text-center pb-10">
-                        {t('Siéntete libre de contactarme')}
+                        {t("Siéntete libre de contactarme")}
                       </h3>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
