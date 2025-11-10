@@ -1,8 +1,8 @@
 // bg
 import BG from '@/public/images/bg/BG.png';
 // about
-// import next_angular from '@/public/images/about/next_angular.png';
 
+// import next_angular from '@/public/images/about/next_angular.png';
 import react_next_vite from '@/public/images/about/react_next_vite.png';
 import ajn from '@/public/images/about/angular_jest_ngrx.png';
 import Databases_logo from '@/public/images/about/Databases_logo.png';
@@ -89,6 +89,7 @@ import shopReact from "@/public/images/projects/shopReact.png";
 import luwygames from "@/public/images/projects/luwygames.jpg";
 import ngrx_signal from "@/public/images/projects/ngrx_signal.jpg";
 import microFrontend from "@/public/images/projects/microFrontend.jpg";
+import yateperu from "@/public/images/projects/yateperu.jpg";
 
 export const about = {
     "react_next_vite" : react_next_vite,
@@ -182,6 +183,7 @@ export const projects = {
     "luwygames" : luwygames,
     "ngrx_signal" : ngrx_signal,
     "microFrontend" : microFrontend,
+    "yateperu":yateperu,
 }
 export default {
  ...about,

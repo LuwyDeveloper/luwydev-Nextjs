@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { projects } from "./imagenes";
+import { projects } from "./Imagenes";
 import Modal from "./Modal";
 
 export default function ProjectsMF() {
@@ -47,12 +47,7 @@ export default function ProjectsMF() {
                     <li className="marker:text-primary text-white text-base font-medium">
                       React, Vite
                     </li>
-                    <li className="marker:text-primary text-white text-base font-medium">
-                      React, Vite
-                    </li>
-                    <li className="marker:text-primary text-white text-base font-medium">
-                      React, Vite
-                    </li>
+
                   </ul>
                   <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
                     <a

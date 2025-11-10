@@ -10,7 +10,7 @@ import {
   profile,
   about,
   background,
-} from "@/components/imagenes";
+} from "@/components/Imagenes";
 import { ChangeLang } from "@/components/ChangeLang";
 import { SliderEmpresa } from "@/components/SliderEmpresa";
 import { SliderProyecto } from "@/components/SliderProyecto";

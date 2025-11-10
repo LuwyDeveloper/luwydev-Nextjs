@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { projects } from "./imagenes";
+import { projects } from "./Imagenes";
 
 export default function ProjectsCMS() {
   return (
@@ -148,6 +148,35 @@ export default function ProjectsCMS() {
         <Image
           className="w-full rounded-lg"
           src={projects.grubba}
+          alt="GrubbaSport"
+        />
+      </div>
+      <div className="w-full h-fit relative group">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+            <a
+              href="https://yateperu.pe/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Yate Perú
+            </a>
+          </h4>
+          <ul className="list-disc">
+            <li className="text-blue-500 text-base font-medium">
+              <a
+                href="https://yateperu.pe/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-white"> FrontEnd</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <Image
+          className="w-full rounded-lg"
+          src={projects.yateperu}
           alt="GrubbaSport"
         />
       </div>

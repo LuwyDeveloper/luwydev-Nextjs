@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { icons } from "@/components/imagenes";
+import { icons } from "@/components/Imagenes";
 import { useLocale } from "@/context/LocaleContext";
 
 export const ChangeLang = () => {

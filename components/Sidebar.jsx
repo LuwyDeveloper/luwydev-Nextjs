@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from "react";  
-import {icons} from "./imagenes";
+import {icons} from "./Imagenes";
 import Image from "next/image";
 
 export const Sidebar = () => {

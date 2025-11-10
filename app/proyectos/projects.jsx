@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import "animate.css";
-import ProjectsC from "@/components/projects";
+import ProjectsC from "@/components/ProjectsC";
 import {
   logos,
   icons,
   background,
-} from "@/components/imagenes";
+} from "@/components/Imagenes";
 import { FooterC } from "@/components/Footer";
 import {useTranslations} from 'next-intl';
 import { ChangeLang } from "@/components/ChangeLang";
