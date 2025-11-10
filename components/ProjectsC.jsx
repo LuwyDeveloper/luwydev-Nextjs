@@ -1,6 +1,6 @@
-import ProjectsCMS from "@/components/ProjectsCMS";
-import ProjectsAngular from "@/components/ProjectsAngular";
-import ProjectsNext from "@/components/ProjectsNext";
+import ProjectsCMS from "@/components/projectsCMS";
+import ProjectsAngular from "@/components/projectsAngular";
+import ProjectsNext from "@/components/projectsNext";
 import ProjectsMF from "@/components/ProjectsMF";
 
 export default function ProjectsC() {
