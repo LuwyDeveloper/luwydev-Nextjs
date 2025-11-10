@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 import { projects } from "./imagenes";
+import Modal from "./Modal";
 
 export default function ProjectsNext() {
+  const [showModal, setShowModal] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <div className="w-full h-fit relative group">
@@ -15,30 +22,44 @@ export default function ProjectsNext() {
               Shop React
             </a>
           </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a
-                href="http://shop-adminrts.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="text-white">
+          <button
+            onClick={() => setShowModal(true)}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+          >
+            Ver detalle
+          </button>
+          <Modal show={showModal} onClose={() => setShowModal(false)}>
+            <div>
+              <Image
+                className="w-full rounded-lg"
+                src={projects.shopReact}
+                alt="Micro Frontend MonoRepo"
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl text-white font-semibold mb-4">
+                Shop React
+              </h2>
+              <p className="text-white mb-3"></p>
+              <ul className="list-disc pl-5">
+                <li className="marker:text-primary text-white text-base font-medium">
                   React19-TS, Vite, TanStack Table
-                </p>
-              </a>
-            </li>
-            <li className="text-blue-500 text-base font-medium">
-              <a
-                href="http://shop-adminrts.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="text-white">
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
                   Formik, Rest, i18n, Tailwind
-                </p>
-              </a>
-            </li>
-          </ul>
+                </li>
+              </ul>
+              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
+                <a
+                  href="http://shop-adminrts.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver sitio
+                </a>
+              </button>
+            </div>
+          </Modal>
         </div>
         <Image
           className="w-full rounded-lg"
@@ -57,26 +78,45 @@ export default function ProjectsNext() {
               LuwyDev
             </a>
           </h4>
-          <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
-              <a
-                href="https://luwydev.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="text-white">NextJs15 CSR, SEO </p>
-              </a>
-            </li>
-            <li className="text-blue-500 text-base font-medium">
-              <a
-                href="https://luwydev.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="text-white">i18n, Tailwind</p>
-              </a>
-            </li>
-          </ul>
+
+          <button
+            onClick={() => setShowModal2(true)}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
+          >
+            Ver detalle
+          </button>
+          <Modal show={showModal2} onClose={() => setShowModal2(false)}>
+            <div>
+              <Image
+                className="w-full rounded-lg"
+                src={projects.luwydev}
+                alt="Micro Frontend MonoRepo"
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl text-white font-semibold mb-4">
+                LuwyDev
+              </h2>
+              <p className="text-white mb-3"></p>
+              <ul className="list-disc pl-5">
+                <li className="marker:text-primary text-white text-base font-medium">
+                  NextJs15 CSR, SEO
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  i18n, Tailwind
+                </li>
+              </ul>
+              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
+                <a
+                  href="https://luwydev.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver sitio
+                </a>
+              </button>
+            </div>
+          </Modal>
         </div>
         <Image
           className="w-full rounded-lg"

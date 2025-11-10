@@ -19,7 +19,7 @@ export default function Modal({ show, onClose, children }) {
     >
       <div
         ref={modalRef}
-        className="flex flex-col md:flex-row items-center gap-5.5 bg-secondary border border-primary rounded-lg shadow-lg w-[90%] xl:w-[988px] xl:min-h-[480px] px-7 py-10 relative"
+        className="bg-secondary border border-primary rounded-lg shadow-lg w-[90%] xl:w-[988px] xl:min-h-[480px] px-7 py-10 relative"
       >
         <button
           onClick={onClose}
@@ -27,7 +27,9 @@ export default function Modal({ show, onClose, children }) {
         >
           ✖
         </button>
+        <div className="grid md:grid-cols-[2fr_1fr] md:grid-rows-1 gap-5.5 items-center">
         {children}
+        </div>
       </div>
     </div>
   );
