@@ -21,7 +21,7 @@ export default function ProjectsC() {
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           Angular / CSR – SSR
         </h4>
-        {/* <ProjectsAngular></ProjectsAngular> */}
+        <ProjectsAngular></ProjectsAngular>
       </div>
       <div className="flex justify-center flex-col py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
@@ -33,7 +33,7 @@ export default function ProjectsC() {
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           CMS - Ecommerce
         </h4>
-        {/* <ProjectsCMS></ProjectsCMS> */}
+        <ProjectsCMS></ProjectsCMS>
       </div>
     </div>
   );
