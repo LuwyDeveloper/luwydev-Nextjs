@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { projects } from "./imagenes";
 import ProjectsCMS from "@/components/projectscms";
 import ProjectsAngular from "@/components/projectsangular";
 import ProjectsNext from "@/components/projectsnext";

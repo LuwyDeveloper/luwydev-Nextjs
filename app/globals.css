@@ -2,7 +2,12 @@
 
 :root {
   --color-primary: #007aff;
+  --color-secondary: #121b30;
   font-size: 16px;
+}
+@theme {
+  --color-primary: #007aff;
+  --color-secondary: #121b30;
 }
 
 body {
