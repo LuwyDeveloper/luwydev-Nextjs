@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { projects } from "./Imagenes";
+import { projects } from "./imagenes";
 import Modal from "./Modal";
 
 export default function ProjectsMF() {

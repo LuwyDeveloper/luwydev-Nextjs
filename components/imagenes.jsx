@@ -1,8 +1,6 @@
 // bg
 import BG from '@/public/images/bg/BG.png';
 // about
-
-// import next_angular from '@/public/images/about/next_angular.png';
 import react_next_vite from '@/public/images/about/react_next_vite.png';
 import ajn from '@/public/images/about/angular_jest_ngrx.png';
 import Databases_logo from '@/public/images/about/Databases_logo.png';
@@ -21,7 +19,6 @@ import vercel from '@/public/images/about/vercel.svg';
 import netlify from '@/public/images/about/netlify.svg';
 import git from '@/public/images/about/git.svg';
 import neon_console from '@/public/images/about/neon_console.svg';
-import wordpress from '@/public/images/about/wordpress.svg';
 
 // icons
 import archives from "@/public/images/icon/archives.png";
@@ -183,7 +180,7 @@ export const projects = {
     "luwygames" : luwygames,
     "ngrx_signal" : ngrx_signal,
     "microFrontend" : microFrontend,
-    "yateperu":yateperu,
+    "yateperu": yateperu,
 }
 export default {
  ...about,

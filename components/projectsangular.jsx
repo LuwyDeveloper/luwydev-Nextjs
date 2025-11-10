@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { projects } from "./Imagenes";
+import { projects } from "./imagenes";
 
 export default function ProjectsAngular() {
   return (

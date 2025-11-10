@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { logos } from "./Imagenes";
+import { logos } from "./imagenes";
 
 export const SliderEmpresa = () => {
   return (

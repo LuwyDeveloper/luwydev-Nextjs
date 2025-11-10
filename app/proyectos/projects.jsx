@@ -7,7 +7,7 @@ import {
   logos,
   icons,
   background,
-} from "@/components/Imagenes";
+} from "@/components/imagenes";
 import { FooterC } from "@/components/Footer";
 import {useTranslations} from 'next-intl';
 import { ChangeLang } from "@/components/ChangeLang";

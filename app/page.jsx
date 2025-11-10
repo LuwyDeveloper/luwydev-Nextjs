@@ -10,7 +10,7 @@ import {
   profile,
   about,
   background,
-} from "@/components/Imagenes";
+} from "@/components/imagenes";
 import { ChangeLang } from "@/components/ChangeLang";
 import { SliderEmpresa } from "@/components/SliderEmpresa";
 import { SliderProyecto } from "@/components/SliderProyecto";
@@ -548,35 +548,6 @@ export function App() {
                       </div>
                       <SliderProyecto></SliderProyecto>
                     </div>
-                    {/* <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                      <div>
-                        <h2 className="uppercase text-lg text-blue-500 font-medium block mb-3">
-                          {t('Proyectos')}
-                        </h2>
-                        <h3 className="text-white font-semibold text-4xl xl:text-5xl xl:leading-snug">
-                          {t('Trabajos realizados')}
-                        </h3>
-                      </div>
-                    </div> */}
-                    {/* <div className="flex justify-center flex-col  py-5">
-                      <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-                        Angular / CSR – SSR
-                      </h4>
-                      <ProjectsAngular></ProjectsAngular>
-                    </div>
-                    <div className="flex justify-center flex-col py-5">
-                      <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-                        NextJS - React/ CSR – SSR
-                      </h4>
-                      <ProjectsNext></ProjectsNext>
-                    </div>
-                    <div className="flex justify-center flex-col pt-5">
-                      <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-                        CMS - Ecommerce
-                      </h4>
-                      <ProjectsCMS></ProjectsCMS>
-                    </div> */}
-
                     <div className="flex justify-center items-center">
                       <Link
                         href={"/proyectos"}
