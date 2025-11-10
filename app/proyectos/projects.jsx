@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import "animate.css";
-import ProjectsC from "@/components/projectsC";
+import ProjectsC from "@/components/projectC";
 import {
   logos,
   icons,
