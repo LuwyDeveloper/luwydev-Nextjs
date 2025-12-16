@@ -1,13 +1,14 @@
 @import "tailwindcss";
+@theme {
+  --color-primary: #007aff;
+  --color-secondary: #121b30;
+}
 
 :root {
   --color-primary: #007aff;
   --color-secondary: #121b30;
   font-size: 16px;
-}
-@theme {
-  --color-primary: #007aff;
-  --color-secondary: #121b30;
+  font-weight: 300;
 }
 
 body {
@@ -21,11 +22,42 @@ body {
 a {
   text-decoration: none;
 }
+
 @media (width >= 96rem) {
   .container {
     max-width: 83rem !important;
   }
 }
+
+/* modal Swiper */
+
+.main_modal_swiper {
+    --swiper-navigation-color: #007aff;
+    --swiper-pagination-color: #007aff;
+    --swiper-pagination-bullet-inactive-color: #007aff;
+    width: 100%;
+    position: relative;
+}
+.main_modal_swiper .swiper {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main_modal_swiper .swiper-button-next,
+.main_modal_swiper .swiper-button-prev {
+width: 2rem ;
+height: 2rem;
+padding: 0.5rem;
+transition: 0.3s;
+}
+.main_modal_swiper .swiper-button-next:hover,
+.main_modal_swiper .swiper-button-prev:hover {
+  background-color: rgba(0, 122, 255, 0.3);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+
 .left_8 {
   left: -1.5rem;
 }
@@ -66,8 +98,6 @@ a {
   bottom: -400px;
 }
 
-
-
 .-left-10 {
   left: 10rem;
 }
@@ -96,56 +126,6 @@ a {
   scroll-behavior: smooth !important;
 }
 
-/*  End Home  */
-/*  Custom Cursor */
-.custom-cursor,
-.custom-cursor-dot {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  opacity: 0;
-}
-
-/* Decorative */
-.custom-cursor {
-  width: 3.25rem;
-  height: 3.25rem;
-  background: var(--color-primary);
-  border: 1px solid;
-  border-color: var(--color-primary);
-  border-radius: 50%;
-}
-
-.custom-cursor-dot {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background-color: transparent;
-}
-
-/* Follower */
-/* Follower Container/Area/Wrapper */
-.follower {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 6.25rem;
-  height: 6.25rem;
-  border: none;
-  border-radius: 50%;
-  background: var(--color-primary);
-  color: var(--color-white);
-  -webkit-transition: none;
-  transition: none;
-}
-
-.pointer_large {
-  cursor: pointer;
-}
 
 /* Custom Cursor End */
 
@@ -363,7 +343,7 @@ a {
 /* Customized */
 .cd-headline .is-visible {
   margin: 0px 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
 }
 
@@ -440,105 +420,7 @@ section::-webkit-scrollbar-thumb {
 ::-webkit-scrollbar-thumb:hover {
   background: #0438bc;
 }
-
-.pulsing {
-  animation: pulse 1500ms infinite;
-}
-
-.pulsing-dev {
-  animation: pulse-dev 1500ms infinite;
-}
-
-.pulsing-photo {
-  animation: pulse-photo 1500ms infinite;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: #2662fa 0 0 0 0;
-  }
-
-  100% {
-    box-shadow: rgba(38, 98, 250, 0.1) 0 0 0 16px;
-  }
-}
-
-@keyframes pulse-dev {
-  0% {
-    box-shadow: #daed1a 0 0 0 0;
-  }
-
-  100% {
-    box-shadow: transparent 0 0 0 16px;
-  }
-}
-
-@keyframes pulse-photo {
-  0% {
-    box-shadow: #47d990 0 0 0 0;
-  }
-
-  50% {
-    box-shadow: #47d990 0 0 0 16px;
-  }
-
-  100% {
-    box-shadow: transparent 0 0 0 16px;
-  }
-}
-
 /* animi  */
-
-.fm-big-circle {
-  animation: fRotate 50s linear infinite;
-}
-
-.fm-icon-block img {
-  animation: fRotate-reverse 50s linear infinite;
-}
-
-.fm-icon-block:first-child {
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fm-icon-block:nth-child(2) {
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-}
-
-.fm-icon-block:nth-child(3) {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-}
-
-.fm-icon-block:nth-child(4) {
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-}
-
-/* circle content */
-.fm-circle {
-  animation: fcircle-rotate 50s linear infinite;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.fm-circle .fm-icon-block img {
-  animation: fimg-rotate 50s linear infinite;
-}
-
-/* center logo */
-.fm-center-logo {
-  transform: translate(-50%, -50%);
-}
-
-.fm-center-logo img {
-  max-width: 100%;
-}
 
 .circle-text {
   animation: fimg-rotate 10s linear infinite;
@@ -546,35 +428,6 @@ section::-webkit-scrollbar-thumb {
 
 /* keyframe animation */
 
-@keyframes fRotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fRotate-reverse {
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes fcircle-rotate {
-  from {
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(-405deg);
-  }
-}
 
 @keyframes fimg-rotate {
   from {

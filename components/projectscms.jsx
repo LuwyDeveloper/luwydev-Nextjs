@@ -6,7 +6,7 @@ export default function ProjectsCMS() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://removex.pe/"
               target="_blank"
@@ -35,7 +35,7 @@ export default function ProjectsCMS() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://trainingcertification.pe/"
               target="_blank"
@@ -64,7 +64,7 @@ export default function ProjectsCMS() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwydev.com/jjm/web2024/"
               target="_blank"
@@ -94,7 +94,7 @@ export default function ProjectsCMS() {
 
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://floreriabenavides.com.pe/"
               target="_blank"
@@ -124,7 +124,7 @@ export default function ProjectsCMS() {
 
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://www.grubbasport.com/"
               target="_blank"
@@ -153,7 +153,7 @@ export default function ProjectsCMS() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://yateperu.pe/"
               target="_blank"

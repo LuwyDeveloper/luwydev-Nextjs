@@ -4,16 +4,20 @@ import { useState } from "react";
 import { projects } from "./imagenes";
 import Modal from "./Modal";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
 export default function ProjectsNext() {
   const [showModal, setShowModal] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
-
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="http://shop-adminrts.netlify.app/"
               target="_blank"
@@ -29,15 +33,46 @@ export default function ProjectsNext() {
             Ver detalle
           </button>
           <Modal show={showModal} onClose={() => setShowModal(false)}>
-            <div>
-              <Image
-                className="w-full rounded-lg"
-                src={projects.shopReact}
-                alt="Micro Frontend MonoRepo"
-              />
+            <div className="main_modal_swiper">
+              <Swiper
+                slidesPerView={"auto"}
+                centeredSlides={false}
+                loop={true}
+                modules={[Navigation]}
+                navigation
+              >
+                <SwiperSlide>
+                  <Image
+                    className="w-fit rounded-lg"
+                    src={projects.shopReact1}
+                    alt="Shop React"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-fit rounded-lg"
+                    src={projects.shopReact2}
+                    alt="Shop React"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-fit rounded-lg"
+                    src={projects.shopReact}
+                    alt="Shop React"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-fit rounded-lg"
+                    src={projects.shopReact3}
+                    alt="Shop React"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
             <div>
-              <h2 className="text-2xl text-white font-semibold mb-4">
+              <h2 className="text-2xl text-white font-medium mb-4">
                 Shop React
               </h2>
               <p className="text-white mb-3"></p>
@@ -69,7 +104,7 @@ export default function ProjectsNext() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwydev.com/"
               target="_blank"
@@ -90,11 +125,11 @@ export default function ProjectsNext() {
               <Image
                 className="w-full rounded-lg"
                 src={projects.luwydev}
-                alt="Micro Frontend MonoRepo"
+                alt="Luwy Dev"
               />
             </div>
             <div>
-              <h2 className="text-2xl text-white font-semibold mb-4">
+              <h2 className="text-2xl text-white font-medium mb-4">
                 LuwyDev
               </h2>
               <p className="text-white mb-3"></p>

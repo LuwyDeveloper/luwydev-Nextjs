@@ -83,9 +83,16 @@ import shopRest from "@/public/images/projects/shopRest.png";
 import ReactiveForms from "@/public/images/projects/ReactiveForms.png";
 import luwydev from "@/public/images/projects/luwydev.jpg";
 import shopReact from "@/public/images/projects/shopReact.png";
+import shopReact1 from "@/public/images/projects/shopReact1.jpg";
+import shopReact2 from "@/public/images/projects/shopReact2.jpg";
+import shopReact3 from "@/public/images/projects/shopReact3.jpg";
+
 import luwygames from "@/public/images/projects/luwygames.jpg";
 import ngrx_signal from "@/public/images/projects/ngrx_signal.jpg";
 import microFrontend from "@/public/images/projects/microFrontend.jpg";
+import microFrontend1 from "@/public/images/projects/microFrontend_1.jpg";
+import microFrontend2 from "@/public/images/projects/microFrontend_2.jpg";
+import microFrontend3 from "@/public/images/projects/microFrontend_3.jpg";
 import yateperu from "@/public/images/projects/yateperu.jpg";
 
 export const about = {
@@ -177,9 +184,15 @@ export const projects = {
     "ReactiveForms" : ReactiveForms,
     "luwydev" : luwydev,
     "shopReact" : shopReact,
+    "shopReact1" : shopReact1,
+    "shopReact2" : shopReact2,
+    "shopReact3" : shopReact3,
     "luwygames" : luwygames,
     "ngrx_signal" : ngrx_signal,
     "microFrontend" : microFrontend,
+    "microFrontend1" : microFrontend1,
+    "microFrontend2" : microFrontend2,
+    "microFrontend3" : microFrontend3,
     "yateperu": yateperu,
 }
 export default {

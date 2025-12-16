@@ -6,7 +6,7 @@ export default function ProjectsAngular() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://a20-appgames.netlify.app/"
               target="_blank"
@@ -44,7 +44,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwypack.netlify.app/#/gender/men"
               target="_blank"
@@ -82,7 +82,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://ngrxstore.netlify.app/"
               target="_blank"
@@ -120,7 +120,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://fast-billings.vercel.app/"
               target="_blank"
@@ -149,7 +149,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://ang20-my-forms-reactive.vercel.app/reactive"
               target="_blank"
@@ -187,7 +187,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://uat-ggp.yanbal.com/#/id"
               target="_blank"
@@ -225,7 +225,7 @@ export default function ProjectsAngular() {
       </div>
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
-          <h4 className="text-white text-center text-[28px] font-semibold px-10">
+          <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://www.somosbelcorp.com/"
               target="_blank"

@@ -42,14 +42,14 @@ export function ProjectsPage() {
                 </Link>
               </div>
 
-              <div className="flex justify-between text text-lg font-medium font-work text-[#747681]">
+              <div className="flex justify-between text text-lg font-medium text-[#747681]">
                 <h1 className="text-white text-center text-sm hover:text-blue-600 text-h1 transition-all cursor-default">
                 {t('Proyectos')}
                 </h1>
               </div>
             </div>
             <div className="flex gap-10 items-center">
-              <div className="flex gap-[6px] justify-between text text-lg font-medium font-work text-[#747681]">
+              <div className="flex gap-[6px] justify-between text text-lg font-normal text-[#747681]">
                 <Image src={icons.mail_fast} alt="" />
                  <p className="text-neutral-500 text-sm sm:text-lg hover:text-white transition-all">
                   <a href="mailto:luwy.dyro@gmail.com">luwy.dyro@gmail.com</a>
@@ -112,7 +112,7 @@ export function ProjectsPage() {
                         <h2 className="uppercase text-lg text-blue-500 font-medium block mb-3">
                           {t('Proyectos')}
                         </h2>
-                        <h3 className="text-white font-semibold text-4xl xl:text-5xl xl:leading-snug mb-2">
+                        <h3 className="text-white font-medium text-4xl xl:text-5xl xl:leading-snug mb-2">
                           {t('Trabajos Realizados')}
                         </h3>
                       </div>

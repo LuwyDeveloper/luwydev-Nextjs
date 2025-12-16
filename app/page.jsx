@@ -63,14 +63,14 @@ export function App() {
                 />
               </div>
 
-              <div className="flex justify-between text text-lg font-medium font-work text-[#747681]">
+              <div className="flex justify-between text text-lg font-medium text-[#747681]">
                 <h1 className="text-white text-center text-sm hover:text-blue-600 text-h1 transition-all cursor-default">
                   Luwy Dyro
                 </h1>
               </div>
             </div>
             <div className="flex gap-10 items-center">
-              <div className="flex gap-[6px] justify-between text text-lg font-medium font-work text-[#747681]">
+              <div className="flex gap-[6px] justify-between text text-lg font-normal text-[#747681]">
                 <Image src={icons.mail_fast} alt="" />
                 <p className="text-neutral-500 text-lg hover:text-white transition-all">
                   <a href="mailto:luwy.dyro@gmail.com">luwy.dyro@gmail.com</a>
@@ -151,8 +151,8 @@ export function App() {
                   >
                     <div className="grid lg:grid-cols-2 gap-10 items-center">
                       <div className="lg:col-span-1 head_title_home">
-                        <div className="text-3xl lg:text-5xl xl:text-6xl mb-6 sm:mb-11 leading-normal xl:leading-snug font-work text-white ">
-                          <p className="text_1 font-bold">{t("Hola, soy")} </p>
+                        <div className="text-3xl lg:text-5xl xl:text-6xl mb-6 sm:mb-11 leading-normal xl:leading-snug text-white ">
+                          <p className="text_1 font-semibold">{t("Hola, soy")} </p>
                           <p className="xl:text-[68px]">Luwy&nbsp;Dyro</p>
                           <span className="relative">
                             <span className="relative z-20 w-fit">
@@ -223,7 +223,7 @@ export function App() {
                   >
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame3} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         Dev Front End
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -233,7 +233,7 @@ export function App() {
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         {t("Microservicios")}
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -245,7 +245,7 @@ export function App() {
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame2} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         Ecommerce CMS
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -255,7 +255,7 @@ export function App() {
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame4} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         UX Developer
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -265,7 +265,7 @@ export function App() {
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame6} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         {t("Metodología Agile")}
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -275,7 +275,7 @@ export function App() {
                     </div>
                     <div className="px-7 pt-7 pb-5 bg-[#091530] rounded-[10px] shadow-customThree transition-all hover:bg-blue-500 duration-500">
                       <Image src={about.Frame5} alt="" />
-                      <h4 className="text-white text-2xl font-semibold mt-3">
+                      <h4 className="text-white text-2xl font-medium mt-3">
                         E-mailing Marketing
                       </h4>
                       <p className="text-indigo-200 text-sm mt-3">
@@ -295,7 +295,7 @@ export function App() {
                             {t("Conóceme")}
                           </h2>
 
-                          <h3 className="text-white font-semibold text-4xl xl:text-5xl xl:leading-snug mb-4">
+                          <h3 className="text-white font-normal text-4xl xl:text-5xl xl:leading-snug mb-4">
                             Software Skills
                           </h3>
                           <p className="text-lg text-neutral-100 mb-8">
@@ -307,7 +307,7 @@ export function App() {
                         </div>
                         <div className="mb-10 space-y-4">
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Angular/NextJs
                             </b>
                             <div className="w-full h-2 rounded flex items-center overflow-hidden growAnimation">
@@ -318,7 +318,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               TailwindCSS/Bootstrap/DeysiUI/Material UI/SCSS
                             </b>
                             <div className="w-full h-2 rounded flex items-center overflow-hidden growAnimation">
@@ -329,7 +329,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Post CSS / BEM / OOCSS / SMACSS
                             </b>
                             <div className="w-full h-2 rounded flex items-center overflow-hidden growAnimation">
@@ -341,7 +341,7 @@ export function App() {
                           </div>
 
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               RxJS, Signals, Effect, Auth, NgRX
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -352,7 +352,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Unit Test, Jest, TDD
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -363,7 +363,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               SQL/MySQL/MongoDb/Firestore
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -374,7 +374,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               PSD/Figma/Illustrator
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -386,7 +386,7 @@ export function App() {
                           </div>
 
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Scrum/Kanban/JIRA/Board Azure
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -397,7 +397,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               GitHub, GitLab, BitBucket, Docker
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -408,7 +408,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               EsLint / Prettier / Lighthouse / PageSpeed /
                               BrowserStack
                             </b>
@@ -420,7 +420,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Webpack, Module - Vite Federation
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -432,7 +432,7 @@ export function App() {
                           </div>
 
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               Azure, Render, Vercel, Netlify, Neon Console,
                               Firebase
                             </b>
@@ -444,7 +444,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               SAP Commerce Cloud/Composable Store Front
                               (Angular20)
                             </b>
@@ -456,7 +456,7 @@ export function App() {
                             </div>
                           </div>
                           <div className="relative">
-                            <b className="text-lg font-medium text-neutral-100 block mb-3">
+                            <b className="text-lg font-normal text-neutral-100 block mb-3">
                               CMS (WooCommerce – {t("Pasarelas de Pago")})
                             </b>
                             <div className="w-full h-2 flex items-center rounded overflow-hidden growAnimation">
@@ -542,7 +542,7 @@ export function App() {
                   >
                     <div className="pt-[7rem] pb-[5rem]">
                       <div className="max-w-lg mx-auto text-center mb-10">
-                        <h2 className="text-5xl font-urbanist text-white font-semibold">
+                        <h2 className="text-5xl font-urbanist text-white font-medium">
                           {t("Proyectos")}
                         </h2>
                       </div>
@@ -565,7 +565,7 @@ export function App() {
                   >
                     <div className="pt-[7rem] pb-[5rem]">
                       <div className="max-w-lg mx-auto text-center mb-10">
-                        <h2 className="text-5xl font-urbanist text-white font-semibold">
+                        <h2 className="text-5xl font-urbanist text-white font-medium">
                           {t("Empresas")}
                         </h2>
                       </div>
@@ -580,7 +580,7 @@ export function App() {
                       <h2 className="text-white font-bold text-4xl leading-normal xl:text-5xl capitalize xl:leading-snug text-center">
                         {t("Contácteme")}
                       </h2>
-                      <h3 className="text-2xl font-medium text-white text-center pb-10">
+                      <h3 className="text-2xl text-white text-center pb-10">
                         {t("Siéntete libre de contactarme")}
                       </h3>
                     </div>
@@ -598,7 +598,7 @@ export function App() {
                                 </div>
                               </div>
                               <div className="head-box-contact">
-                                <h4 className="block mb-2 text-2xl font-bold text-center text-neutral-500">
+                                <h4 className="block mb-2 text-2xl font-medium text-center text-neutral-500">
                                   RRSS
                                 </h4>
                               </div>
@@ -646,12 +646,12 @@ export function App() {
                                 </div>
                               </div>
                               <div className="head-box-contact">
-                                <h4 className="block mb-2 text-2xl font-bold text-center text-neutral-500">
+                                <h4 className="block mb-2 text-2xl font-medium text-center text-neutral-500">
                                   E-mail
                                 </h4>
                               </div>
                               <div>
-                                <p className="block mb-2 text-base font-medium text-center text-neutral-500">
+                                <p className="block mb-2 text-base font-normal text-center text-neutral-500">
                                   <a href="mailto:luwy.dyro@gmail.com">
                                     luwy.dyro@gmail.com
                                   </a>
@@ -671,12 +671,12 @@ export function App() {
                                 </div>
                               </div>
                               <div className="head-box-contact">
-                                <h4 className="block mb-2 text-2xl font-bold text-center text-neutral-500">
+                                <h4 className="block mb-2 text-2xl font-medium text-center text-neutral-500">
                                   DEV
                                 </h4>
                               </div>
                               <div>
-                                <p className="block mb-2 text-base font-medium text-center text-neutral-500">
+                                <p className="block mb-2 text-base font-normal text-center text-neutral-500">
                                   <a
                                     href="https://github.com/Luwy-Dyro"
                                     target="_blank"
