@@ -93,6 +93,7 @@ import microFrontend from "@/public/images/projects/microFrontend.jpg";
 import microFrontend1 from "@/public/images/projects/microFrontend_1.jpg";
 import microFrontend2 from "@/public/images/projects/microFrontend_2.jpg";
 import microFrontend3 from "@/public/images/projects/microFrontend_3.jpg";
+import microFrontend4 from "@/public/images/projects/microFrontend_4.jpeg";
 import yateperu from "@/public/images/projects/yateperu.jpg";
 
 export const about = {
@@ -193,6 +194,7 @@ export const projects = {
     "microFrontend1" : microFrontend1,
     "microFrontend2" : microFrontend2,
     "microFrontend3" : microFrontend3,
+    "microFrontend4" : microFrontend4,
     "yateperu": yateperu,
 }
 export default {

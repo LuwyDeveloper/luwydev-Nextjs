@@ -35,7 +35,7 @@ export default function ProjectsMF() {
           <Modal show={showModal} onClose={() => setShowModal(false)}>
             <div className="main_modal_swiper">
               <Swiper
-                slidesPerView={'auto'}
+                slidesPerView={"auto"}
                 centeredSlides={false}
                 loop={true}
                 modules={[Navigation]}
@@ -45,6 +45,13 @@ export default function ProjectsMF() {
                   <Image
                     className="w-fit rounded-lg"
                     src={projects.microFrontend1}
+                    alt="Micro Frontend MonoRepo"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="w-fit rounded-lg"
+                    src={projects.microFrontend4}
                     alt="Micro Frontend MonoRepo"
                   />
                 </SwiperSlide>
@@ -69,12 +76,31 @@ export default function ProjectsMF() {
                 MicroFrontend
               </h2>
               <p className="text-white mb-3">
-                Este proyecto implementa una arquitectura de micro frontends
-                usando React y Vite, desplegado en Render.
+                Este proyecto implementa una arquitectura de 7 micro frontends
+                encapsulada en Workspace - Shell compartiendo Tokens de UI -
+                Design System
               </p>
               <ul className="list-disc pl-5">
                 <li className="marker:text-primary text-white text-base font-medium">
-                  React, Vite
+                  React 19
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  Vite Federation
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  TypeScript
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  TailwindCSS
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  Deploy Render
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  NodeJS
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  NPM Package
                 </li>
               </ul>
               <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
