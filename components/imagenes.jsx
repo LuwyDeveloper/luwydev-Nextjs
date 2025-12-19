@@ -95,6 +95,9 @@ import microFrontend2 from "@/public/images/projects/microFrontend_2.jpg";
 import microFrontend3 from "@/public/images/projects/microFrontend_3.jpg";
 import microFrontend4 from "@/public/images/projects/microFrontend_4.jpeg";
 import yateperu from "@/public/images/projects/yateperu.jpg";
+import design_system1 from "@/public/images/projects/designSystemLuwy1.jpg";
+import design_system2 from "@/public/images/projects/designSystemLuwy2.jpg";
+import design_system3 from "@/public/images/projects/designSystemLuwy3.jpg";
 
 export const about = {
     "react_next_vite" : react_next_vite,
@@ -196,6 +199,9 @@ export const projects = {
     "microFrontend3" : microFrontend3,
     "microFrontend4" : microFrontend4,
     "yateperu": yateperu,
+    "design_system1":design_system1,
+    "design_system2":design_system2,
+    "design_system3":design_system3
 }
 export default {
  ...about,

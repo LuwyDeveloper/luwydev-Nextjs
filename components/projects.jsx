@@ -2,6 +2,7 @@ import ProjectsCMS from "@/components/projectscms";
 import ProjectsAngular from "@/components/projectsangular";
 import ProjectsNext from "@/components/projectsnext";
 import ProjectsMF from "@/components/projectMF";
+import ProjectsDS from "@/components/projectsDS";
 
 export default function ProjectsC() {
   return (
@@ -16,6 +17,7 @@ export default function ProjectsC() {
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           Design System
         </h4>
+        <ProjectsDS></ProjectsDS>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
