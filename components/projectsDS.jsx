@@ -19,7 +19,7 @@ export default function ProjectsDS() {
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
-              href=""
+              href="https://luwy-designsystem.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -45,7 +45,7 @@ export default function ProjectsDS() {
                   <Image
                     className="w-fit rounded-lg"
                     src={projects.design_system1}
-                    alt="Micro Frontend MonoRepo"
+                    alt="Design System"
                   />
                 </SwiperSlide>
 
@@ -53,14 +53,14 @@ export default function ProjectsDS() {
                   <Image
                     className="w-fit rounded-lg"
                     src={projects.design_system2}
-                    alt="Micro Frontend MonoRepo"
+                    alt="Design System"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <Image
                     className="w-fit rounded-lg"
                     src={projects.design_system3}
-                    alt="Micro Frontend MonoRepo"
+                    alt="Design System"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -76,9 +76,11 @@ export default function ProjectsDS() {
                 <li className="marker:text-primary text-white text-base font-medium">
                   React 19
                 </li>
-
                 <li className="marker:text-primary text-white text-base font-medium">
                   TypeScript
+                </li>
+                <li className="marker:text-primary text-white text-base font-medium">
+                  Tokens
                 </li>
                 <li className="marker:text-primary text-white text-base font-medium">
                   TailwindCSS
@@ -92,7 +94,7 @@ export default function ProjectsDS() {
               </ul>
               <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
                 <a
-                  href=""
+                  href="https://luwy-designsystem.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -105,7 +107,7 @@ export default function ProjectsDS() {
         <Image
           className="w-full rounded-lg"
           src={projects.design_system2}
-          alt="Micro Frontend MonoRepo"
+          alt="Design System"
         />
       </div>
     </div>
