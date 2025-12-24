@@ -16,7 +16,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://a20-appgames.netlify.app/"
                 target="_blank"
@@ -25,7 +25,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">Angular20, Signals, Auth0</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://a20-appgames.netlify.app/"
                 target="_blank"
@@ -54,7 +54,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://luwypack.netlify.app/#/gender/men"
                 target="_blank"
@@ -63,7 +63,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">A20 CSR, Signals, ReactiveForms</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://luwypack.netlify.app/#/gender/men"
                 target="_blank"
@@ -92,7 +92,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://ngrxstore.netlify.app/"
                 target="_blank"
@@ -101,7 +101,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">ngSignals, Computed, Store</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://ngrxstore.netlify.app/"
                 target="_blank"
@@ -130,7 +130,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://fast-billings.vercel.app/"
                 target="_blank"
@@ -159,7 +159,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://ang20-my-forms-reactive.vercel.app/reactive"
                 target="_blank"
@@ -168,7 +168,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">Modo práctico, RF, FormB</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://ang20-my-forms-reactive.vercel.app/reactive"
                 target="_blank"
@@ -197,7 +197,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://uat-ggp.yanbal.com/#/id"
                 target="_blank"
@@ -206,7 +206,7 @@ export default function ProjectsAngular() {
                 <p className="text-white"> A19 SAP StoreFront B2C</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://uat-ggp.yanbal.com/#/id"
                 target="_blank"
@@ -235,7 +235,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://www.somosbelcorp.com/"
                 target="_blank"
@@ -244,7 +244,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">A15 CSR, RxJS, Material UI</p>
               </a>
             </li>
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://www.somosbelcorp.com/"
                 target="_blank"

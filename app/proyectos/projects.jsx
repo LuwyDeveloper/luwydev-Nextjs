@@ -107,12 +107,12 @@ export function ProjectsPage() {
                     className=" slide-sec "
                     id="projects"
                   >
-                    <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pb-10">
+                    <div className="flex flex-row justify-between items-center gap-4 pb-10">
                       <div>
                         <h2 className="uppercase text-lg text-blue-500 font-medium block mb-3">
                           {t('Proyectos')}
                         </h2>
-                        <h3 className="text-white font-medium text-4xl xl:text-5xl xl:leading-snug mb-2">
+                        <h3 className="text-white font-medium text-3xl xl:text-5xl xl:leading-snug mb-2">
                           {t('Trabajos Realizados')}
                         </h3>
                       </div>

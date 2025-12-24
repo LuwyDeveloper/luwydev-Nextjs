@@ -16,7 +16,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://removex.pe/"
                 target="_blank"
@@ -45,7 +45,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://trainingcertification.pe/"
                 target="_blank"
@@ -74,7 +74,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://luwydev.com/jjm/web2024/"
                 target="_blank"
@@ -104,7 +104,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://floreriabenavides.com.pe/"
                 target="_blank"
@@ -134,7 +134,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://www.grubbasport.com/"
                 target="_blank"
@@ -163,7 +163,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-sm md:text-base font-medium">
+            <li className="text-blue-500 text-sm xl:text-base font-medium">
               <a
                 href="https://yateperu.pe/"
                 target="_blank"

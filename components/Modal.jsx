@@ -20,7 +20,7 @@ export default function Modal({ show, onClose, children }) {
     >
       <div
         ref={modalRef}
-        className="bg-secondary border border-primary rounded-lg shadow-lg w-[90%] xl:max-w-[80%] xl:min-h-[480px] max-h-[80vh] overflow-hidden px-7 py-10 relative flex"
+        className="bg-secondary border border-primary rounded-lg  shadow-lg w-[90%] xl:max-w-[80%] xl:min-h-[480px] max-h-[80vh] not-lg:max-h-[90dvh] overflow-y-auto px-7 py-10 relative flex"
       >
         <button
           onClick={onClose}
