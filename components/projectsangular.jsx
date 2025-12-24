@@ -5,7 +5,7 @@ export default function ProjectsAngular() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://a20-appgames.netlify.app/"
@@ -16,7 +16,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://a20-appgames.netlify.app/"
                 target="_blank"
@@ -25,7 +25,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">Angular20, Signals, Auth0</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://a20-appgames.netlify.app/"
                 target="_blank"
@@ -43,7 +43,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwypack.netlify.app/#/gender/men"
@@ -54,7 +54,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://luwypack.netlify.app/#/gender/men"
                 target="_blank"
@@ -63,7 +63,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">A20 CSR, Signals, ReactiveForms</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://luwypack.netlify.app/#/gender/men"
                 target="_blank"
@@ -81,7 +81,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://ngrxstore.netlify.app/"
@@ -92,7 +92,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://ngrxstore.netlify.app/"
                 target="_blank"
@@ -101,7 +101,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">ngSignals, Computed, Store</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://ngrxstore.netlify.app/"
                 target="_blank"
@@ -119,7 +119,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://fast-billings.vercel.app/"
@@ -130,7 +130,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://fast-billings.vercel.app/"
                 target="_blank"
@@ -148,7 +148,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://ang20-my-forms-reactive.vercel.app/reactive"
@@ -159,7 +159,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://ang20-my-forms-reactive.vercel.app/reactive"
                 target="_blank"
@@ -168,7 +168,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">Modo práctico, RF, FormB</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://ang20-my-forms-reactive.vercel.app/reactive"
                 target="_blank"
@@ -186,7 +186,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://uat-ggp.yanbal.com/#/id"
@@ -197,7 +197,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://uat-ggp.yanbal.com/#/id"
                 target="_blank"
@@ -206,7 +206,7 @@ export default function ProjectsAngular() {
                 <p className="text-white"> A19 SAP StoreFront B2C</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://uat-ggp.yanbal.com/#/id"
                 target="_blank"
@@ -224,7 +224,7 @@ export default function ProjectsAngular() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://www.somosbelcorp.com/"
@@ -235,7 +235,7 @@ export default function ProjectsAngular() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://www.somosbelcorp.com/"
                 target="_blank"
@@ -244,7 +244,7 @@ export default function ProjectsAngular() {
                 <p className="text-white">A15 CSR, RxJS, Material UI</p>
               </a>
             </li>
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://www.somosbelcorp.com/"
                 target="_blank"

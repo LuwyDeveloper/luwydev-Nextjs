@@ -14,12 +14,13 @@ export default function Modal({ show, onClose, children }) {
 
   return (
     <div
+    data-component="Modal"
       onClick={handleClickOutside}
-      className="fixed inset-0 bg-black/70 flex justify-center items-center z-50"
+      className="fixed inset-0 bg-black/70 flex justify-center z-50 items-center flex-col-reverse"
     >
       <div
         ref={modalRef}
-        className="bg-secondary border border-primary rounded-lg shadow-lg w-[90%] xl:w-[988px] xl:min-h-[480px] xl:max-h-[600px] overflow px-7 py-10 relative"
+        className="bg-secondary border border-primary rounded-lg shadow-lg w-[90%] xl:max-w-[80%] xl:min-h-[480px] max-h-[80vh] overflow-hidden px-7 py-10 relative flex"
       >
         <button
           onClick={onClose}
@@ -27,7 +28,7 @@ export default function Modal({ show, onClose, children }) {
         >
           ✖
         </button>
-        <div className="grid md:grid-cols-[2fr_1fr] md:grid-rows-1 gap-5.5 items-center">
+        <div className="grid lg:grid-cols-[1fr_1fr] lg:grid-rows-1 gap-5.5 relative items-center w-full h-full ">
         {children}
         </div>
       </div>

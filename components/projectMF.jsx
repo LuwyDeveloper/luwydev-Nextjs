@@ -16,7 +16,7 @@ export default function ProjectsMF() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://monorepo-microf-luwydev.onrender.com/"
@@ -71,7 +71,8 @@ export default function ProjectsMF() {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div>
+            <div className="flex flex-col h-full overflow-hidden pr-2">
+              <div className="flex-1 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-primary">
               <h2 className="text-2xl text-white font-medium mb-4">
                 MicroFrontend
               </h2>
@@ -103,15 +104,16 @@ export default function ProjectsMF() {
                   NPM Package
                 </li>
               </ul>
-              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
-                <a
+              </div>
+              <div className="pt-4 border-t mt-4 border-white/10 flex gap-2">
+                <a className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition sticky bottom-0"
                   href="https://monorepo-microf-luwydev.onrender.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Ver sitio
                 </a>
-              </button>
+              </div>
             </div>
           </Modal>
         </div>

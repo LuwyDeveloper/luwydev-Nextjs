@@ -16,7 +16,7 @@ export default function ProjectsDS() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwy-designsystem.netlify.app"
@@ -65,42 +65,161 @@ export default function ProjectsDS() {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div>
-              <h2 className="text-2xl text-white font-medium mb-4">
-                Design System
-              </h2>
-              <p className="text-white mb-3">
-                Este proyecto implementa un Design System con Tokens, Componentes UI 
-              </p>
-              <ul className="list-disc pl-5">
-                <li className="marker:text-primary text-white text-base font-medium">
-                  React 19
-                </li>
-                <li className="marker:text-primary text-white text-base font-medium">
-                  TypeScript
-                </li>
-                <li className="marker:text-primary text-white text-base font-medium">
-                  Tokens
-                </li>
-                <li className="marker:text-primary text-white text-base font-medium">
-                  TailwindCSS
-                </li>
-                <li className="marker:text-primary text-white text-base font-medium">
-                  NodeJS
-                </li>
-                <li className="marker:text-primary text-white text-base font-medium">
-                  NPM Package
-                </li>
-              </ul>
-              <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition">
-                <a
-                  href="https://luwy-designsystem.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ver sitio
-                </a>
-              </button>
+            <div className="flex flex-col h-full overflow-hidden pr-2">
+              <div className="flex-1 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-primary">
+                <h2 className="text-2xl text-white font-semibold mb-4">
+                  Design System
+                </h2>
+                <p className="text-white mb-3">
+                  Monorepo de Design System que centraliza design tokens y una
+                  librería de componentes React, con un portal de documentación
+                  para validar y demostrar su uso.
+                </p>
+                <div className="mb-2">
+                  <p className="text-white text-xl mb-2 font-medium">
+                    Tecnologías:
+                  </p>
+                  <ol className="list-decimal pl-5 mb-3">
+                    {/* 1 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Monorepo / Gestión de paquetes
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        pnpm Workspaces
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Turborepo turbo@^2.5.8 para orquestar dev/build —
+                        turbo.json
+                      </li>
+                    </ul>
+                    {/* 2 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Frontend (portal de documentación) — apps/docs
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        React ^19.1.1 + React DOM
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Vite ^7.1.7 + @vitejs/plugin-react@^5.0.4
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        TypeScript ~5.9.3
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Tailwind CSS v4 ^4.1.14
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        React Router
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Firebase ^12.6.0 (auth/ProtectedRoute en el código) —
+                        package.json
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Lucide React (iconos) ^0.545.0 — package.json
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Motion (animaciones) ^12.23.24 — package.json
+                      </li>
+                    </ul>
+                    {/* 3 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Librería UI — packages/ui
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        React ^19.2.0 + React DOM ^19.2.0
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Vite ^7.1.9
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Storybook 9.1.10
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Chromatic @chromatic-com/storybook@4.1.1
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Testing Storybook con Vitest + Browser
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Vitest ^3.2.4
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Playwright ^1.56.0 (provider browser de Vitest)
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Tailwind CSS v4
+                      </li>
+                    </ul>
+                    {/* 4 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Design Tokens — packages/tokens
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Style Dictionary ^3.9.0 para generar tokens a CSS/JS
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Tokens + theming con CSS variables + @theme
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Preset Tailwind (mapea tokens → theme.extend) —
+                        tailwind-preset.js
+                      </li>
+                    </ul>
+                    {/* 5 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Calidad / Lint
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        ESLint ^9.36.0 (flat config) + typescript-eslint ^8.45.0
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Tokens + theming con CSS variables + @theme
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Preset Tailwind (mapea tokens → theme.extend) —
+                        tailwind-preset.js
+                      </li>
+                    </ul>
+                    {/* 6 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Versionado y publicación
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Changesets @changesets/cli@^2.29.7
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        GitHub Packages
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        GitHub Actions para release automático
+                      </li>
+                    </ul>
+                  </ol>
+                </div>
+              </div>
+              <div className="pt-4 border-t mt-4 border-white/10 flex gap-2">
+                  <a className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition sticky bottom-0"
+                    href="https://luwy-designsystem.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver sitio
+                  </a>
+                  <a className="mt-4 px-6 py-2 bg-[#CC3534] text-white rounded hover:bg-blue-500 transition  sticky bottom-0"
+                    href=" https://github.com/orgs/LuwyDyroWeb/packages"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver Token NPM
+                  </a>
+              </div>
             </div>
           </Modal>
         </div>

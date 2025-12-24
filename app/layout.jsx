@@ -4,7 +4,7 @@ export const metadata = {
   metadataBase: new URL('https://luwydev.com'),
   title: "Luwy Dyro",
   description: "Luwy Dyro - Developer web Front End, UX Developer, E-commerce, SEO",
-  keywords: "Luwy, Dyro, Desarrollador web, frontend, Ux developer, diseñador web",
+  keywords: "Luwy, Luwy Dyro, Desarrollador web, frontend, Ux developer, diseñador web",
   authors: [{name:"Luwy Dyro"}],
   robots: {
     index: true,

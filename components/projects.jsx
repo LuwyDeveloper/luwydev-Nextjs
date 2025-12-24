@@ -9,19 +9,24 @@ export default function ProjectsC() {
     <div className="grid grid-cols-1 gap-5">
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          MicroFrontend
-        </h4>
-        <ProjectsMF></ProjectsMF>
-      </div>
-      <div className="flex justify-center flex-col  py-5">
-        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           Design System
         </h4>
         <ProjectsDS></ProjectsDS>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Angular / CSR – SSR
+          MicroFrontend
+        </h4>
+        <ProjectsMF></ProjectsMF>
+      </div>
+            <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          Angular 21 / CSR - SSR
+        </h4>
+      </div>
+      <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          Angular 17-20 / CSR - SSR
         </h4>
         <ProjectsAngular></ProjectsAngular>
       </div>

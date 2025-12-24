@@ -5,7 +5,7 @@ export default function ProjectsCMS() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://removex.pe/"
@@ -16,7 +16,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://removex.pe/"
                 target="_blank"
@@ -34,7 +34,7 @@ export default function ProjectsCMS() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://trainingcertification.pe/"
@@ -45,7 +45,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://trainingcertification.pe/"
                 target="_blank"
@@ -63,7 +63,7 @@ export default function ProjectsCMS() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://luwydev.com/jjm/web2024/"
@@ -74,7 +74,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://luwydev.com/jjm/web2024/"
                 target="_blank"
@@ -93,7 +93,7 @@ export default function ProjectsCMS() {
       </div>
 
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://floreriabenavides.com.pe/"
@@ -104,7 +104,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://floreriabenavides.com.pe/"
                 target="_blank"
@@ -123,7 +123,7 @@ export default function ProjectsCMS() {
       </div>
 
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://www.grubbasport.com/"
@@ -134,7 +134,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://www.grubbasport.com/"
                 target="_blank"
@@ -152,7 +152,7 @@ export default function ProjectsCMS() {
         />
       </div>
       <div className="w-full h-fit relative group">
-        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80 ">
+        <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
           <h4 className="text-white text-center text-[28px] font-medium px-10">
             <a
               href="https://yateperu.pe/"
@@ -163,7 +163,7 @@ export default function ProjectsCMS() {
             </a>
           </h4>
           <ul className="list-disc">
-            <li className="text-blue-500 text-base font-medium">
+            <li className="text-blue-500 text-sm md:text-base font-medium">
               <a
                 href="https://yateperu.pe/"
                 target="_blank"
