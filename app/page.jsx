@@ -144,7 +144,7 @@ export function App() {
             {/* <MenuMobile></MenuMobile> */}
           </div>
         </div>
-        <div className="container h-full w-full relative pb-6 sm:pt-[105px] sm:pb-[37px] z-0 overflow-hidden" >
+        <div className="container h-full w-full relative pb-6 sm:pt-[105px] sm:pb-[37px] z-0 " >
           {/* header desktop*/}
           <div className="pt-6 absolute w-full top-0 justify-between hidden sm:flex px-5 lg:px-12 2xl:px-0">
             <div className="flex gap-[42px] justify-start items-center">
