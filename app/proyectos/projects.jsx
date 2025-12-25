@@ -18,10 +18,10 @@ export function ProjectsPage() {
     <div style={{ background: "#010825" }} className="max-h-screen h-screen">
       <div
         style={{ background: `url(${background.BG.src})` }}
-        className="flex justify-center items-center bg-no-repeat box-border bg-cover h-full relative pb-[68px]"
+        className="flex justify-center items-center bg-no-repeat   bg-cover h-full relative pb-[68px]"
       >
-        <div className="container h-full w-full box-border relative pt-[72px] pb-6 sm:pt-[105px] sm:pb-[37px]">
-          <div className="pt-6 absolute w-full top-0 justify-between box-border flex px-5 lg:px-12 2xl:px-0">
+        <div className="container h-full w-full   relative pt-[72px] pb-6 sm:pt-[105px] sm:pb-[37px]">
+          <div className="pt-6 absolute w-full top-0 justify-between   flex px-5 lg:px-12 2xl:px-0">
             <div className="flex gap-2 sm:gap-[42px] justify-start items-center">
               <div className="flex logo justify-start items-center">
                 <Link href={"/"}>

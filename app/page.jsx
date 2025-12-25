@@ -17,11 +17,13 @@ import { SliderProyecto } from "@/components/SliderProyecto";
 import { WordWrapper } from "@/components/WordWrapper";
 import { FooterC } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
-import { MenuMobile } from "@/components/MenuMobile";
+// import { MenuMobile } from "@/components/MenuMobile";
 import { useTranslations } from "next-intl";
 
 export function App() {
   const [showPreloader, setShowPreloader] = useState(false);
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     const hasPreloader = sessionStorage.getItem("hasPreloader");
 
@@ -41,12 +43,110 @@ export function App() {
   return (
     <div style={{ background: "#010825" }} className="max-h-screen h-screen">
       {showPreloader && <PreLoader />}
+      <aside
+        className={`fixed md:hidden top-2 right-0  z-9999 ${
+          open
+            ? "active-mnav-right"
+            : "close-mnav-right"
+        }`}
+      >
+        <div
+          className={`list-none flex flex-col absolute top-14 right-0 items-end`}
+        >
+          <a
+            href="#home"
+            className="text-lg font-medium delay-[50ms] text-white transition duration-500 px-5 py-3 border-b border-blue-500 w-52 bg-blue-500 hover:bg-blue-600 rounded-tl-md"
+          >
+            <span className="w-full">Inicio</span>
+          </a>
+          <a
+            href="#service"
+            className="text-lg font-medium delay-[50ms] text-white transition duration-500 px-5 py-3 border-b border-blue-500 w-52 bg-blue-500 hover:bg-blue-600"
+          >
+            <span className="w-full">Servicios</span>
+          </a>
+          <a
+            href="#about"
+            className="text-lg font-medium delay-100 text-white transition duration-500 px-5 py-3 border-b border-blue-500 w-52 bg-blue-500 hover:bg-blue-600"
+          >
+            <span className="w-full">Sobre Mí</span>
+          </a>
+          <a
+            href="#projects"
+            className="text-lg font-medium delay-150 text-white transition duration-500 px-5 py-3 border-b border-blue-500 w-52 bg-blue-500 hover:bg-blue-600"
+          >
+            <span className="w-full">Portfolio</span>
+          </a>
+
+          <a
+            href="#review"
+            className="text-lg font-medium delay-200 text-white transition duration-500 px-5 py-3 w-52 border-b border-blue-500 bg-blue-500 hover:bg-blue-600"
+          >
+            <span className="w-full h-full">Empresas</span>
+          </a>
+          <a
+            href="#contact"
+            className="text-lg font-medium delay-200 text-white transition duration-500 px-5 py-3 rounded-bl-md w-52 bg-blue-500 hover:bg-blue-600"
+          >
+            <span className="w-full h-full">Contacto</span>
+          </a>
+        </div>
+      </aside>
       <div
         style={{ background: `url(${background.BG.src})` }}
-        className="flex justify-center items-center bg-no-repeat box-border bg-cover h-full relative pb-[68px]"
+        className="flex justify-center flex-col items-center bg-no-repeat bg-cover h-full relative pb-[68px]"
       >
-        <div className="container h-full w-full box-border relative pt-[72px] pb-6 sm:pt-[105px] sm:pb-[37px]">
-          <div className="pt-6 absolute w-full top-0 justify-between box-border hidden sm:flex px-5 lg:px-12 2xl:px-0">
+        <div className="flex sm:hidden sticky top-0 h-auto w-full ">
+          <div className=" w-full px-5 lg:px-12 2xl:px-0 py-6 justify-center flex items-center">
+            <div className="gap-[42px] justify-start items-center">
+              <div className="flex logo justify-start items-center">
+                <Image
+                  className="animate__animated animated flip animate__infinite logo_home dark-version"
+                  src={logos.logo_LD}
+                  alt="logo"
+                  width="20"
+                />
+                <Image
+                  className="drk-version"
+                  src={logos.logo_luwydyro}
+                  alt="logo"
+                  width="91"
+                />
+              </div>
+            </div>
+            <button
+              onClick={() => setOpen(!open)}
+              className={`w-12 h-12 mr-5 rounded-md flex justify-center items-center cursor-pointer z-9999 absolute top-2 right-0`}
+              id="mobile-control2"
+              aria-label="Abrir menú"
+            >
+              {!open ? (
+                <svg
+                  className="fill-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="2em"
+                  viewBox="0 0 448 512"
+                >
+                  <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                </svg>
+              ) : (
+                <svg
+                  fill="#ffffff"
+                  width="2em"
+                  height="2em"
+                  viewBox="-6 -6 24 24"
+                  preserveAspectRatio="xMinYMin"
+                >
+                  <path d="M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z" />
+                </svg>
+              )}
+            </button>
+            {/* <MenuMobile></MenuMobile> */}
+          </div>
+        </div>
+        <div className="container h-full w-full relative pb-6 sm:pt-[105px] sm:pb-[37px] z-0 overflow-hidden" >
+          {/* header desktop*/}
+          <div className="pt-6 absolute w-full top-0 justify-between hidden sm:flex px-5 lg:px-12 2xl:px-0">
             <div className="flex gap-[42px] justify-start items-center">
               <div className="flex logo justify-start items-center">
                 <Image
@@ -65,7 +165,7 @@ export function App() {
 
               <div className="flex justify-between text text-lg font-medium text-[#747681]">
                 <h1 className="text-white text-center text-sm hover:text-blue-600 text-h1 transition-all cursor-default">
-                  Luwy Dyro
+                  Luwy Dyro - Developer web Front End
                 </h1>
               </div>
             </div>
@@ -116,43 +216,25 @@ export function App() {
               </div>
             </div>
           </div>
-          <div className="flex sm:hidden bg-red absolute top-0 h-10 w-full">
-            <div className="relative top-0 w-full px-5 lg:px-12 2xl:px-0 pt-6 justify-center box-border flex items-center">
-              <div className="gap-[42px] justify-start items-center">
-                <div className="flex logo justify-start items-center">
-                  <Image
-                    className="animate__animated animated flip animate__infinite logo_home dark-version"
-                    src={logos.logo_LD}
-                    alt="logo"
-                    width="20"
-                  />
-                  <Image
-                    className="drk-version"
-                    src={logos.logo_luwydyro}
-                    alt="logo"
-                    width="91"
-                  />
-                </div>
-              </div>
-              <MenuMobile></MenuMobile>
-            </div>
-          </div>
-          <div className="w-full relative flex justify-center items-center h-full px-3 sm:px-8 lg:px-12 2xl:px-0">
+          {/* main */}
+          <div className="w-full  flex justify-center items-center h-full px-3 sm:px-8 lg:px-12 2xl:px-0">
             <div className="w-full max-w-[1320px] relative rounded-xl lg:rounded-3xl bg-[#121B30] flex items-center h-full">
               <Sidebar></Sidebar>
-              <div className="h-full w-full rounded-xl lg:rounded-3xl overflow-hidden">
+              <div className="w-full rounded-xl lg:rounded-3xl overflow-hidden">
                 <section
-                  className="snap-y pl-5 sm:pl-12 xl:pl-[90px] pb-[78px] pr-5 xl:pr-[61px] h-full overflow-x-hidden overflow-y-scroll scroll-smooth"
+                  className="snap-y pl-5 sm:pl-12 xl:pl-[90px] pb-[78px] pr-5 xl:pr-[61px] h-dvh-80 overflow-x-hidden overflow-y-scroll scroll-smooth"
                   id="main"
                 >
                   <div
-                    className="snap-start snap-normal slide-sec mx-auto pr-4 sm:pr-6 lg:max-w-7xl lg:pr-8 pt-8 lg:pt-14 pb-20"
+                    className="snap-start snap-normal slide-sec mx-auto pr-4 sm:pr-6 lg:max-w-7xl lg:pr-8 pt-8 lg:pt-14 pb-0"
                     id="home"
                   >
                     <div className="grid lg:grid-cols-2 gap-10 items-center">
                       <div className="lg:col-span-1 head_title_home">
                         <div className="text-3xl lg:text-5xl xl:text-6xl mb-6 sm:mb-11 leading-normal xl:leading-snug text-white ">
-                          <p className="text_1 font-semibold">{t("Hola, soy")} </p>
+                          <p className="text_1 font-semibold">
+                            {t("Hola, soy")}{" "}
+                          </p>
                           <p className="xl:text-[68px]">Luwy&nbsp;Dyro</p>
                           <span className="relative">
                             <span className="relative z-20 w-fit">
