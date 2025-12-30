@@ -55,7 +55,7 @@ export const SliderEmpresa = () => {
         <SwiperSlide className="xl:px-[1.3rem] lg:px-[1rem]">
           <div className="client-logo-light">
             <a
-              href="https://luwydev.com/jjm/web2024/"
+              href="https://luwydev.com/jjm/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -175,7 +175,7 @@ export const SliderEmpresa = () => {
         <SwiperSlide className="xl:px-[1.3rem] lg:px-[1rem]">
           <div className="client-logo-light">
             <a
-              href="https://luwydev.com/jjm/web2024/"
+              href="https://luwydev.com/jjm/"
               rel="noopener noreferrer"
               target="_blank"
             >
