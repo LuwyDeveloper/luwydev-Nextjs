@@ -10,6 +10,12 @@ export default function ProjectsC() {
     <div className="grid grid-cols-1 gap-5">
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
+          Angular 21 / Auth - JWT - Cache - Signals
+        </h4>
+        <ProjectsAngular21></ProjectsAngular21>
+      </div>
+      <div className="flex justify-center flex-col  py-5">
+        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
           Design System
         </h4>
         <ProjectsDS></ProjectsDS>
@@ -19,12 +25,6 @@ export default function ProjectsC() {
           MicroFrontend
         </h4>
         <ProjectsMF></ProjectsMF>
-      </div>
-      <div className="flex justify-center flex-col  py-5">
-        <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Angular 21 / Auth - JWT - Cache - Signals
-        </h4>
-        <ProjectsAngular21></ProjectsAngular21>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">

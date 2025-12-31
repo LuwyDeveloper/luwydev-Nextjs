@@ -17,14 +17,8 @@ export default function ProjectsAngular21() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
-          <h4 className="text-white text-center text-[28px] font-medium px-10">
-            <a
-              href="https://admin-a21.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setShowModal(true)}>
               Admin Auth
-            </a>
           </h4>
           <button
             onClick={() => setShowModal(true)}
@@ -63,7 +57,7 @@ export default function ProjectsAngular21() {
                     alt="Luwy Admin Auth"
                   />
                 </SwiperSlide>
-                                <SwiperSlide>
+                <SwiperSlide>
                   <Image
                     className="w-fit rounded-lg"
                     src={projects.ldAdmin4}
@@ -78,7 +72,9 @@ export default function ProjectsAngular21() {
                   Administrador - Autentificación
                 </h2>
                 <p className="text-white mb-3">
-                  Dashboard/Admin en Angular 21 (Signals + zoneless con autenticación (login) y autorización por roles, con seguridad por guards/interceptors y consumo de API REST (DummyJSON). 
+                  Dashboard/Admin en Angular 21 (Signals + zoneless con
+                  autenticación (login) y autorización por roles, con seguridad
+                  por guards/interceptors y consumo de API REST (DummyJSON).
                 </p>
                 <div className="mb-2">
                   <ol className="list-decimal pl-5 mb-3">
@@ -93,13 +89,13 @@ export default function ProjectsAngular21() {
                       <li className="marker:text-primary text-white text-base font-base">
                         Signals, para manejar estado y conectar RxJS
                       </li>
-                                            <li className="marker:text-primary text-white text-base font-base">
+                      <li className="marker:text-primary text-white text-base font-base">
                         RxJS, para flujos async y estados de carga
                       </li>
-                                            <li className="marker:text-primary text-white text-base font-base">
+                      <li className="marker:text-primary text-white text-base font-base">
                         TailwindCSS v4.1
                       </li>
-                                            <li className="marker:text-primary text-white text-base font-base">
+                      <li className="marker:text-primary text-white text-base font-base">
                         SweetAlert2
                       </li>
                       <li className="marker:text-primary text-white text-base font-base">
@@ -121,7 +117,8 @@ export default function ProjectsAngular21() {
                         Router lazy
                       </li>
                       <li className="marker:text-primary text-white text-base font-base">
-                        Capa Core: API client, auth, interceptors, cache, manejo de errores.
+                        Capa Core: API client, auth, interceptors, cache, manejo
+                        de errores.
                       </li>
                       <li className="marker:text-primary text-white text-base font-base">
                         Capa Features:pantallas de negocio
@@ -172,18 +169,18 @@ export default function ProjectsAngular21() {
                         Debounce + paginación + búsqueda
                       </li>
                     </ul>
-                    
                   </ol>
                 </div>
               </div>
               <div className="pt-3 pb-6 border-t mt-2 bg-secondary z-1000 border-white/10 flex gap-2 sticky -bottom-10">
-                  <a className="mt-4 px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition "
-                    href="https://admin-a21.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ver sitio
-                  </a>
+                <a
+                  className="mt-4 px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition "
+                  href="https://admin-a21.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver sitio
+                </a>
               </div>
             </div>
           </Modal>

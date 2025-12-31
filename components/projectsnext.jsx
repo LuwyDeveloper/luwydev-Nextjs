@@ -18,14 +18,8 @@ export default function ProjectsNext() {
       {/* ShopReact */}
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
-          <h4 className="text-white text-center text-[28px] font-medium px-10">
-            <a
-              href="http://shop-adminrts.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setShowModal(true)}>
               Shop React
-            </a>
           </h4>
           <button
             onClick={() => setShowModal(true)}
