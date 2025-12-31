@@ -86,7 +86,10 @@ import shopReact from "@/public/images/projects/shopReact.png";
 import shopReact1 from "@/public/images/projects/shopReact1.jpg";
 import shopReact2 from "@/public/images/projects/shopReact2.jpg";
 import shopReact3 from "@/public/images/projects/shopReact3.jpg";
-
+import ldAdmin1 from "@/public/images/projects/LDyroAdmin-01.jpg";
+import ldAdmin2 from "@/public/images/projects/LDyroAdmin-02.jpg";
+import ldAdmin3 from "@/public/images/projects/LDyroAdmin-03.jpg";
+import ldAdmin4 from "@/public/images/projects/LDyroAdmin-04.jpg";
 import luwygames from "@/public/images/projects/luwygames.jpg";
 import ngrx_signal from "@/public/images/projects/ngrx_signal.jpg";
 import microFrontend from "@/public/images/projects/microFrontend.jpg";
@@ -201,7 +204,11 @@ export const projects = {
     "yateperu": yateperu,
     "design_system1":design_system1,
     "design_system2":design_system2,
-    "design_system3":design_system3
+    "design_system3":design_system3,
+    "ldAdmin1":ldAdmin1,
+    "ldAdmin2":ldAdmin2,
+    "ldAdmin3":ldAdmin3,
+    "ldAdmin4":ldAdmin4,
 }
 export default {
  ...about,

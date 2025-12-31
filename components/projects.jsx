@@ -3,6 +3,7 @@ import ProjectsAngular from "@/components/projectsangular";
 import ProjectsNext from "@/components/projectsnext";
 import ProjectsMF from "@/components/projectMF";
 import ProjectsDS from "@/components/projectsDS";
+import ProjectsAngular21 from "@/components/projectsAngular21";
 
 export default function ProjectsC() {
   return (
@@ -19,10 +20,11 @@ export default function ProjectsC() {
         </h4>
         <ProjectsMF></ProjectsMF>
       </div>
-            <div className="flex justify-center flex-col  py-5">
+      <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Angular 21 / CSR - SSR
+          Angular 21 / Auth - JWT - Cache - Signals
         </h4>
+        <ProjectsAngular21></ProjectsAngular21>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
