@@ -101,7 +101,7 @@ export default function ProjectsMF() {
               </div>
               <div className="pt-3 pb-6 border-t mt-2 bg-secondary z-1000 border-white/10 flex gap-2 sticky -bottom-10">
                 <a className="mt-4 px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
-                  href="https://monorepo-microf-luwydev.onrender.com/"
+                  href="https://monorepo-microf-luwydev.up.railway.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
