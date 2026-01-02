@@ -108,10 +108,6 @@ export default function ProjectsDS() {
                         React Router
                       </li>
                       <li className="marker:text-primary text-white text-base font-base">
-                        Firebase ^12.6.0 (auth/ProtectedRoute en el código) —
-                        package.json
-                      </li>
-                      <li className="marker:text-primary text-white text-base font-base">
                         Lucide React (iconos) ^0.545.0 — package.json
                       </li>
                       <li className="marker:text-primary text-white text-base font-base">
@@ -119,6 +115,30 @@ export default function ProjectsDS() {
                       </li>
                     </ul>
                     {/* 3 */}
+                    <li className="marker:text-white text-white text-base font-normal">
+                      Autenticación
+                    </li>
+                    <ul className="list-disc pl-5 mb-3">
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Firebase ^12.6.0 — Login con Google
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        API Auth — Login con DummyJSON 
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        AuthProvider (auth/AuthProvider en el código) — Manejo global de sesión, token y usuario
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        React Router: Rutas protegidas con ProtectedRoute (auth/ProtectedRoute en el código)
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Restore Session — Recupera sesión al recargar la app
+                      </li>
+                      <li className="marker:text-primary text-white text-base font-base">
+                        Logout seguro — Limpieza de estado y storage
+                      </li>
+                    </ul>
+                    {/* 4 */}
                     <li className="marker:text-white text-white text-base font-normal">
                       Librería UI — packages/ui
                     </li>
@@ -148,7 +168,7 @@ export default function ProjectsDS() {
                         Tailwind CSS v4
                       </li>
                     </ul>
-                    {/* 4 */}
+                    {/* 5 */}
                     <li className="marker:text-white text-white text-base font-normal">
                       Design Tokens — packages/tokens
                     </li>
@@ -164,7 +184,7 @@ export default function ProjectsDS() {
                         tailwind-preset.js
                       </li>
                     </ul>
-                    {/* 5 */}
+                    {/* 6 */}
                     <li className="marker:text-white text-white text-base font-normal">
                       Calidad / Lint
                     </li>
@@ -180,7 +200,7 @@ export default function ProjectsDS() {
                         tailwind-preset.js
                       </li>
                     </ul>
-                    {/* 6 */}
+                    {/* 7 */}
                     <li className="marker:text-white text-white text-base font-normal">
                       Versionado y publicación
                     </li>
