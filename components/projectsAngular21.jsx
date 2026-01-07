@@ -11,22 +11,22 @@ import { Navigation } from "swiper/modules";
 import Modal from "./Modal";
 
 export default function ProjectsAngular21() {
-  const [showModal, setShowModal] = useState(false);
+  const [activeModal, setActiveModal] = useState(null);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
-          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setShowModal(true)}>
+          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setActiveModal("admin-auth")}>
               Admin Auth
           </h4>
           <button
-            onClick={() => setShowModal(true)}
+            onClick={() => setActiveModal("admin-auth")}
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
           >
             Ver detalle
           </button>
-          <Modal show={showModal} onClose={() => setShowModal(false)}>
+          <Modal show={activeModal === "admin-auth"} onClose={() => setActiveModal(null)}>
             <div className="main_modal_swiper">
               <Swiper
                 slidesPerView={"auto"}

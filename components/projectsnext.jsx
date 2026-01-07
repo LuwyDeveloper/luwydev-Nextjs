@@ -10,24 +10,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 export default function ProjectsNext() {
-  const [showModal, setShowModal] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
+const [activeModal, setActiveModal] = useState(null);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {/* ShopReact */}
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
-          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setShowModal(true)}>
+          <h4 className="text-white text-center text-[28px] font-medium px-10 cursor-pointer" onClick={() => setActiveModal("shop-react")}>
               Shop React
           </h4>
           <button
-            onClick={() => setShowModal(true)}
+            onClick={() => setActiveModal("shop-react")}
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
           >
             Ver detalle
           </button>
-          <Modal show={showModal} onClose={() => setShowModal(false)}>
+          <Modal show={activeModal === "shop-react"} onClose={() => setActiveModal(null)}>
             <div className="main_modal_swiper">
               <Swiper
                 slidesPerView={"auto"}
@@ -104,23 +103,17 @@ export default function ProjectsNext() {
       {/* LuwyDev */}
       <div className="w-full h-fit relative group">
         <div className="transition-all w-full h-0 overflow-hidden group-hover:h-full not-lg:h-full flex flex-col justify-center items-center absolute rounded-lg bg-slate-950/80">
-          <h4 className="text-white text-center text-[28px] font-medium px-10">
-            <a
-              href="https://luwydev.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <h4 className="text-white text-center text-[28px] font-medium px-10" onClick={() => setActiveModal("luwydev")}>
               LuwyDev
-            </a>
           </h4>
 
           <button
-            onClick={() => setShowModal2(true)}
+            onClick={() => setActiveModal("luwydev")}
             className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition"
           >
             Ver detalle
           </button>
-          <Modal show={showModal2} onClose={() => setShowModal2(false)}>
+          <Modal show={activeModal === "luwydev"} onClose={() => setActiveModal(null)}>
             <div>
               <Image
                 className="w-full rounded-lg"

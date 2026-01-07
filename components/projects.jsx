@@ -16,13 +16,13 @@ export default function ProjectsC() {
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Design System
+          Design System / React19 - Vite - StoryBook - GitHub Tokens - Angular20 - TailwindCSS v.4.1
         </h4>
         <ProjectsDS></ProjectsDS>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          MicroFrontend
+          MicroFrontend / Angular21 - Module Federation - React19 - Vite - UI-Kit - TailwindCSS v.4.1
         </h4>
         <ProjectsMF></ProjectsMF>
       </div>

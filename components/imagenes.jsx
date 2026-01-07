@@ -97,6 +97,8 @@ import microFrontend1 from "@/public/images/projects/microFrontend_1.jpg";
 import microFrontend2 from "@/public/images/projects/microFrontend_2.jpg";
 import microFrontend3 from "@/public/images/projects/microFrontend_3.jpg";
 import microFrontend4 from "@/public/images/projects/microFrontend_4.jpeg";
+import A21mf1 from "@/public/images/projects/MicroFront-A21-01.jpg";
+import A21mf2 from "@/public/images/projects/MicroFront-A21-02.jpg";
 import yateperu from "@/public/images/projects/yateperu.jpg";
 import design_system1 from "@/public/images/projects/designSystemLuwy1.jpg";
 import design_system2 from "@/public/images/projects/designSystemLuwy2.jpg";
@@ -209,6 +211,8 @@ export const projects = {
     "ldAdmin2":ldAdmin2,
     "ldAdmin3":ldAdmin3,
     "ldAdmin4":ldAdmin4,
+    "A21mf1":A21mf1,
+    "A21mf2":A21mf2,
 }
 export default {
  ...about,
