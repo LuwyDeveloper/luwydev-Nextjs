@@ -10,19 +10,19 @@ export default function ProjectsC() {
     <div className="grid grid-cols-1 gap-5">
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Angular 21 / Auth - JWT - Cache - Signals
+          Autentificación:  <span className="text-lg xl:text-2xl">Angular 21, JWT, Cache, Signals, TailwindCSS v.4.1</span>
         </h4>
         <ProjectsAngular21></ProjectsAngular21>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Design System / React19 - Vite - StoryBook - GitHub Tokens - Angular20 - TailwindCSS v.4.1
+          Design System : <span className="text-lg xl:text-2xl">React19 - Vite - StoryBook - GitHub Tokens - Angular20 - TailwindCSS v.4.1</span>
         </h4>
         <ProjectsDS></ProjectsDS>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          MicroFrontend / Angular21 - Module Federation - React19 - Vite - UI-Kit - TailwindCSS v.4.1
+          MicroFrontend : <span className="text-lg xl:text-2xl">Angular21 - Module Federation - React19 - Vite - UI-Kit - TailwindCSS v.4.1</span>
         </h4>
         <ProjectsMF></ProjectsMF>
       </div>
