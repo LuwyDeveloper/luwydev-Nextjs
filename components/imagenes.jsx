@@ -97,6 +97,9 @@ import microFrontend1 from "@/public/images/projects/microFrontend_1.jpg";
 import microFrontend2 from "@/public/images/projects/microFrontend_2.jpg";
 import microFrontend3 from "@/public/images/projects/microFrontend_3.jpg";
 import microFrontend4 from "@/public/images/projects/microFrontend_4.jpeg";
+import AuthNest1 from "@/public/images/projects/AuthNest1.jpg";
+import AuthNest2 from "@/public/images/projects/AuthNest2.jpg";
+import AuthNest3 from "@/public/images/projects/AuthNest3.jpg";
 import A21mf1 from "@/public/images/projects/MicroFront-A21-01.jpg";
 import A21mf2 from "@/public/images/projects/MicroFront-A21-02.jpg";
 import yateperu from "@/public/images/projects/yateperu.jpg";
@@ -213,6 +216,9 @@ export const projects = {
     "ldAdmin4":ldAdmin4,
     "A21mf1":A21mf1,
     "A21mf2":A21mf2,
+    "AuthNest1": AuthNest1,
+    "AuthNest2": AuthNest2,
+    "AuthNest3": AuthNest3
 }
 export default {
  ...about,

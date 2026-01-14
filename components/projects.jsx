@@ -3,16 +3,16 @@ import ProjectsAngular from "@/components/projectsangular";
 import ProjectsNext from "@/components/projectsnext";
 import ProjectsMF from "@/components/projectMF";
 import ProjectsDS from "@/components/projectsDS";
-import ProjectsAngular21 from "@/components/projectsAngular21";
+import ProjectsAuth from "@/components/projectsAuth";
 
 export default function ProjectsC() {
   return (
     <div className="grid grid-cols-1 gap-5">
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
-          Autentificación:  <span className="text-lg xl:text-2xl">Angular 21, JWT, Cache, Signals, TailwindCSS v.4.1</span>
+          Autenticación:  <span className="text-lg xl:text-2xl">Angular 21 - JWT - Cache - Signals - React19 - Nestjs - TailwindCSS v.4.1</span>
         </h4>
-        <ProjectsAngular21></ProjectsAngular21>
+        <ProjectsAuth></ProjectsAuth>
       </div>
       <div className="flex justify-center flex-col  py-5">
         <h4 className="text-white text-2xl xl:text-3xl xl:leading-snug mb-2">
