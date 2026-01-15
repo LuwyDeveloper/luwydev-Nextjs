@@ -21,7 +21,7 @@ export default function ProjectsAngular21() {
             className="text-white text-center text-[28px] font-medium px-10 cursor-pointer"
             onClick={() => setActiveModal("admin-auth")}
           >
-            Admin Auth Angular
+            Admin Auth Angular 21
           </h4>
           <button
             onClick={() => setActiveModal("admin-auth")}
@@ -204,7 +204,7 @@ export default function ProjectsAngular21() {
             className="text-white text-center text-[28px] font-medium px-10 cursor-pointer"
             onClick={() => setActiveModal("admin-auth-react")}
           >
-            Admin Auth React
+            Admin Auth React 19
           </h4>
           <button
             onClick={() => setActiveModal("admin-auth-react")}
